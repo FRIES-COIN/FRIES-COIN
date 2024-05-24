@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "FRIES-COIN-backend": {
+      "main": "src/FRIES-COIN-backend/main.mo",
+      "type": "motoko"
+    },
+    "FRIES-COIN-frontend": {
+      "dependencies": [
+        "FRIES-COIN-backend"
+      ],
+      "source": [
+        "src/FRIES-COIN-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "FRIES-COIN-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
