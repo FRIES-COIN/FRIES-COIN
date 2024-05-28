@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
-
+import Buy from "./components/BuyNow";
 function App() {
   const [greeting, setGreeting] = useState("");
 
@@ -26,6 +26,7 @@ function App() {
         <About />
         <Tokenomics />
         <Roadmap />
+        <Buy />
       </div>
     </main>
   );

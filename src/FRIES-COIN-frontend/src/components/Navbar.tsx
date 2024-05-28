@@ -20,14 +20,14 @@ export default function Navbar() {
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in durtaion-150 cursor-pointer"
               href="#"
             >
-              About
+              AirDrops
             </a>
 
             <a
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in durtaion-150 cursor-pointer"
               href="#"
             >
-              Tokenomics
+              Features
             </a>
             <a
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"

@@ -216,7 +216,6 @@ const dummyContent = [
     title: "Phase 4: Post-Launch Activities (Days 4-7)",
     description: (
       <>
-        <h3>Days 4-7:</h3>
         <ul className="text-gray-300 leading-relaxed font-rem">
           <li>
             <span className="text-[#ffd543] font-semibold">
@@ -269,7 +268,6 @@ const dummyContent = [
     title: "Immediate Next Steps (Week 2 and Beyond)",
     description: (
       <>
-        <h3>Week 2 and Beyond:</h3>
         <ul className="text-gray-300 leading-relaxed font-rem">
           <li>
             <span className="text-[#ffd543] font-semibold">
