@@ -6,6 +6,8 @@ import About from "./components/About";
 import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
 import Buy from "./components/BuyNow";
+import FAQ from "./components/FAQ";
+
 function App() {
   const [greeting, setGreeting] = useState("");
 
@@ -27,6 +29,7 @@ function App() {
         <Tokenomics />
         <Roadmap />
         <Buy />
+        <FAQ />
       </div>
     </main>
   );
