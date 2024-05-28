@@ -2,6 +2,11 @@ import { useState } from "react";
 import { FRIES_COIN_backend } from "declarations/FRIES-COIN-backend";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Tokenomics from "./components/Tokenomics";
+import Roadmap from "./components/Roadmap";
+import Buy from "./components/BuyNow";
+import FAQ from "./components/FAQ";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -20,6 +25,11 @@ function App() {
       <Navbar />
       <div className="mx-auto my-0 max-w-[1140px]">
         <Hero />
+        <About />
+        <Tokenomics />
+        <Roadmap />
+        <Buy />
+        <FAQ />
       </div>
     </main>
   );

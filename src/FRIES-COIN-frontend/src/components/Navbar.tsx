@@ -20,14 +20,14 @@ export default function Navbar() {
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in durtaion-150 cursor-pointer"
               href="#"
             >
-              About
+              AirDrops
             </a>
 
             <a
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in durtaion-150 cursor-pointer"
               href="#"
             >
-              Tokenomics
+              Features
             </a>
             <a
               className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
@@ -39,15 +39,15 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 w-full justify-end">
-          <div>
+          <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
             <HiChatAlt2 color="#ffd543" size={24} />
           </div>
 
-          <div>
+          <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
             <FaTwitter color="#ffd543" size={24} />
           </div>
 
-          <div>
+          <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
             <FaTelegram color="#ffd543" size={24} />
           </div>
         </div>
