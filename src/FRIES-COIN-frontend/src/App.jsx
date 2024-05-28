@@ -7,7 +7,7 @@ import Tokenomics from "./components/Tokenomics";
 import Roadmap from "./components/Roadmap";
 import Buy from "./components/BuyNow";
 import FAQ from "./components/FAQ";
-
+import Footer from "./components/footer";
 function App() {
   const [greeting, setGreeting] = useState("");
 
@@ -31,6 +31,8 @@ function App() {
         <Buy />
         <FAQ />
       </div>
+
+      <Footer />
     </main>
   );
 }

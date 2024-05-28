@@ -21,16 +21,25 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between p-4">
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h1 className="text-5xl font-semibold mb-4 text-white font-rem">
-            <span className="text-[#ffd543] text5xl font-bold">$FRIES: </span>
+            <span className="text-[#ffd543] text5xl font-bold">$FRYS: </span>
             Join the Crispy Revolution with Fries Coin
           </h1>
           <p className="text-xl mb-6 text-white leading-relaxed font-rem">
             The world's first meme coin dedicated to fries enthusiasts
             everywhere.
           </p>
-          <button className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300">
-            Buy $FRIES{" "}
-          </button>
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+            <button className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300">
+              Buy $FRYS{" "}
+            </button>
+            <a
+              href="https://icpex.org/wallet"
+              target="_blank"
+              className="bg-[#041c32] text-[#ffd543] text-center font-semibold text-lg font-rem md:text-xl hover:text-black py-2 px-4 rounded-lg hover:bg-[#ffd543] border-2 border-[#ffd543] transition duration-300"
+            >
+              Swap on icpex
+            </a>
+          </div>
         </div>
         <div className="w-full md:w-1/2 flex items-center justify-center relative">
           <animated.div style={friesAnimation} className="absolute top-0">

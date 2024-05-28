@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className="w-full text-gray-700 md:text-center text-2xl font-semibold flex items-center gap-2 cursor-pointer">
           <img src={logo} alt="logo" className="w-10 h-10" />
           <a href="#" className="font-rem text-[#ffd543]">
-            $FRIES
+            $FRYS
           </a>
         </div>
         <div className="flex items-center justify-between">
@@ -39,17 +39,25 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-2 w-full justify-end">
-          <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
-            <HiChatAlt2 color="#ffd543" size={24} />
-          </div>
-
+          <a
+            href="https://oc.app/community/k3fk6-gaaaa-aaaar-bav6a-cai/channel/248604123721879774877830511727450740199"
+            target="_blank"
+          >
+            {" "}
+            <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
+              <HiChatAlt2 color="#ffd543" size={24} />
+            </div>
+          </a>
+          <a href="https://x.com/FriesCoin" target="_blank"></a>
           <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
             <FaTwitter color="#ffd543" size={24} />
           </div>
-
-          <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
-            <FaTelegram color="#ffd543" size={24} />
-          </div>
+          <a href="https://t.me/friescoin" target="_blank">
+            {" "}
+            <div className="border-[1px] cursor-pointer border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
+              <FaTelegram color="#ffd543" size={24} />
+            </div>
+          </a>
         </div>
       </div>
     </nav>

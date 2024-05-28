@@ -11,7 +11,7 @@ export default function Roadmap() {
   return (
     <TracingBeam className="px-6">
       <h1 className="text-4xl font-bold text-[#ffd543] text-center font-rem my-4">
-        $FRIES COIN Roadmap
+        $FRYS COIN Roadmap
       </h1>
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (

@@ -56,8 +56,8 @@ const Tokenomics: React.FC = () => {
         </h2>
         <div className="mt-10">
           <p className="mt-4 text-2xl text-[#ffd543] font-extrabold text-center font-rem">
-            <strong className="text-white">Total Supply:</strong> 21 Trillion
-            $FRIES
+            <strong className="text-white">Total Supply:</strong> 21 Million
+            $FRYS
           </p>
         </div>
         <div className="mt-10">
