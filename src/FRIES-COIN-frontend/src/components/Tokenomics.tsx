@@ -38,6 +38,7 @@ const renderCustomizedLabel = ({
       fill="white"
       fontSize={10}
       fontWeight="bold"
+      fontFamily="REM"
       textAnchor={x > cx ? "start" : "end"}
       dominantBaseline="central"
     >
@@ -50,17 +51,17 @@ const Tokenomics: React.FC = () => {
   return (
     <div className=" py-20 px-4 sm:px-6 lg:px-8 relative">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-extrabold text-[#ffd543] text-center">
+        <h2 className="text-3xl font-extrabold text-[#ffd543] text-center font-rem">
           Tokenomics
         </h2>
         <div className="mt-10">
-          <p className="mt-4 text-2xl text-[#ffd543] font-extrabold text-center">
+          <p className="mt-4 text-2xl text-[#ffd543] font-extrabold text-center font-rem">
             <strong className="text-white">Total Supply:</strong> 21 Trillion
             $FRIES
           </p>
         </div>
         <div className="mt-10">
-          <h3 className="text-2xl font-bold text-[#ffd543]">
+          <h3 className="text-2xl font-bold text-[#ffd543] font-rem">
             Initial Distribution
           </h3>
           <div className="flex flex-col md:flex-row items-center justify-between">
@@ -90,10 +91,10 @@ const Tokenomics: React.FC = () => {
               </ResponsiveContainer>
             </div>
             <div className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-8">
-              <h4 className="text-xl font-semibold text-gray-300">
+              <h4 className="text-xl font-semibold text-gray-300 font-rem">
                 Distribution and Issuance Schedule:
               </h4>
-              <ul className="mt-2 text-lg text-gray-100 py-4 list-disc list-inside">
+              <ul className="mt-2 text-lg text-gray-100 py-4 list-disc list-inside font-rem">
                 <li className="leading-relaxed">
                   <strong className="text-[#ffd543]">
                     PoUW Consensus Mechanism:
@@ -105,7 +106,7 @@ const Tokenomics: React.FC = () => {
                   <strong className="text-[#ffd543]">
                     Initial Distribution:
                   </strong>
-                  <ul className="list-inside list-disc">
+                  <ul className="list-inside list-disc font-rem">
                     <li>
                       <span>Genesis Block:</span>
                       <ul className="list-inside list-item pl-4">
