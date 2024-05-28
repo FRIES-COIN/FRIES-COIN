@@ -5,7 +5,7 @@ const About: React.FC = () => {
     <div className="py-20 px-4 sm:px-6 lg:px-8">
       <h2 className="text-3xl font-bold text-[#fff] text-center font-rem">
         About{" "}
-        <span className="text-[#ffd543] font-rem font-extrabold">$FRIES</span>
+        <span className="text-[#ffd543] font-rem font-extrabold">$FRYS</span>
         Coin
       </h2>
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center">

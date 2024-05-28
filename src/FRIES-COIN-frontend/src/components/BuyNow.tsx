@@ -9,14 +9,14 @@ export default function Buy() {
           translateZ="50"
           className="text-xl font-bold font-rem text-white"
         >
-          Join the <span className="text-[#ffd543]">$FRIES MOVEMENT</span>
+          Join the <span className="text-[#ffd543]">$FRYS MOVEMENT</span>
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
           className="text-gray-300 text-sm max-w-sm mt-2"
         >
-          Buy $FRIES token and get access to exclusive features and benefits.
+          Buy $FRYS token and get access to exclusive features and benefits.
         </CardItem>
         <CardItem translateZ="100" className="w-full mt-4">
           <img
@@ -41,7 +41,12 @@ export default function Buy() {
             as="button"
             className="px-4 py-2 rounded-xl bg-[#ffd543] text-black text-xs font-bold"
           >
-            Buy Now
+            <a
+              href="https://app.icpswap.com/swap?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=ezu5v-7qaaa-aaaam-acpbq-cai"
+              target="_blank"
+            >
+              Swap $FRYS
+            </a>
           </CardItem>
         </div>
       </CardBody>
