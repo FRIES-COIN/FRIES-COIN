@@ -26,7 +26,7 @@ const PurchaseFriesPopup: React.FC<PurchaseFriesProps> = ({ onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <h2 className="text-xl font-bold mb-4 text-center">Purchase $FRIES</h2>
-        <div className="mb-4">
+        <div className="flex flex-col items-center mb-4">
           <label htmlFor="amount" className="block mb-2 font-bold">
             Amount
           </label>
@@ -39,7 +39,7 @@ const PurchaseFriesPopup: React.FC<PurchaseFriesProps> = ({ onClose }) => {
             placeholder="Enter amount"
           />
         </div>
-        <div className="flex justify-between mb-4">
+        <div className="flex justify-center mb-4">
           <button
             className="px-4 py-2 bg-blue-500 text-white rounded transition-all duration-300 hover:bg-blue-700 hover:scale-105 hover:shadow-lg"
             onClick={handlePurchase}
