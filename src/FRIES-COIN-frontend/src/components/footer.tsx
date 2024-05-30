@@ -1,12 +1,11 @@
 import React from "react";
+import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import { HiChatAlt2 } from "react-icons/hi";
+import iconBg from "../../public/images/logo.png";
+import { FaSquareInstagram } from "react-icons/fa6";
 
 export default function Footer() {
   return (
-<<<<<<< HEAD
-    <div>
-      <h1>Footer</h1>
-    </div>
-=======
     <footer className="relative h-80 flex items-center justify-center bg-cover bg-center text-center text-white px-4">
       {/* Pseudo-element for the background image */}
       <div
@@ -78,6 +77,5 @@ export default function Footer() {
         © 2024 Your Company
       </p>
     </footer>
->>>>>>> 584c73280349aa58db4a3366548db5c7b7a781ed
   );
 }
