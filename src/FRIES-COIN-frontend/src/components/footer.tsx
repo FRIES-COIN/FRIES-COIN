@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
           >
             <div className=" flex flex-col items-center justify-center p-1">
               <FaSquareInstagram color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Telegram</h1>
+              <h1 className="font-bold text-gray-300">Instagram</h1>
             </div>
           </a>
         </div>
