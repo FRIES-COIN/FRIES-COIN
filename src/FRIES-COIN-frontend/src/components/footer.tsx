@@ -71,6 +71,7 @@ export default function Footer() {
         <a
           href="https://dashboard.internetcomputer.org/canister/ezu5v-7qaaa-aaaam-acpbq-cai"
           className="text-[#ffd543] font-bold"
+          target="_blank"
         >
           $FRYS
         </a>{" "}
