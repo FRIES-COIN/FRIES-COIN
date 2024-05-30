@@ -1,10 +1,12 @@
 import React from "react";
-import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
 import { HiChatAlt2 } from "react-icons/hi";
+import { FaTwitter } from "react-icons/fa6";
 import iconBg from "../../public/images/logo.png";
+import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 
-export default function Footer() {
+const Footer: React.FC = () => {
   return (
     <footer className="relative h-80 flex items-center justify-center bg-cover bg-center text-center text-white px-4">
       {/* Pseudo-element for the background image */}
@@ -60,7 +62,7 @@ export default function Footer() {
           >
             <div className=" flex flex-col items-center justify-center p-1">
               <FaSquareInstagram color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Instagram</h1>
+              <h1 className="font-bold text-gray-300">Telegram</h1>
             </div>
           </a>
         </div>
@@ -71,7 +73,6 @@ export default function Footer() {
         <a
           href="https://dashboard.internetcomputer.org/canister/ezu5v-7qaaa-aaaam-acpbq-cai"
           className="text-[#ffd543] font-bold"
-          target="_blank"
         >
           $FRYS
         </a>{" "}
@@ -79,4 +80,6 @@ export default function Footer() {
       </p>
     </footer>
   );
-}
+};
+
+export default Footer;
