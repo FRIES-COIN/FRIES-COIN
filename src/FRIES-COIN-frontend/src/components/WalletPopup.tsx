@@ -3,9 +3,10 @@ import { ThreeDots } from 'react-loader-spinner';
 
 interface WalletPopupProps {
   onClose: () => void;
+  handlePurchasePopup: () => void; 
 }
 
-const WalletPopup: React.FC<WalletPopupProps> = ({ onClose }) => {
+const WalletPopup: React.FC<WalletPopupProps> = ({ onClose, handlePurchasePopup }) => {
   const [isConnecting, setIsConnecting] = useState(false);
   const [connectionStatus, setConnectionStatus] = useState<'success' | 'error' | null>(null);
 
@@ -32,6 +33,7 @@ const WalletPopup: React.FC<WalletPopupProps> = ({ onClose }) => {
       setTimeout(() => {
         setConnectionStatus(null)
       }, 3000)
+      handlePurchasePopup();
     } catch (e) {
       console.log(e);
       setConnectionStatus('error');
