@@ -1,12 +1,10 @@
 import React from "react";
-import { FaTelegram } from "react-icons/fa";
+import { FaLinkedin, FaTelegram, FaTwitter } from "react-icons/fa";
 import { HiChatAlt2 } from "react-icons/hi";
-import { FaTwitter } from "react-icons/fa6";
 import iconBg from "../../public/images/logo.png";
-import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="relative h-80 flex items-center justify-center bg-cover bg-center text-center text-white px-4">
       {/* Pseudo-element for the background image */}
@@ -80,6 +78,4 @@ const Footer: React.FC = () => {
       </p>
     </footer>
   );
-};
-
-export default Footer;
+}
