@@ -1,7 +1,12 @@
 import React from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import buy from "../../public/buy.jpeg";
-export default function Buy() {
+
+interface BuyProps {
+  handleConnectWallet: () => void;
+}
+
+const Buy: React.FC<BuyProps> = ({ handleConnectWallet }) => {
   return (
     <CardContainer className="inter-var">
       <CardBody className="bg-gray-700 md:mx-0 mx-2 w-auto relative group/card hover:shadow-xl hover:shadow-[#ffd543] dark:bg-black dark:border-white/[0.2] border-black/[0.1] sm:w-[30rem] h-auto rounded-xl p-6 border  ">
@@ -32,7 +37,8 @@ export default function Buy() {
             translateZ={20}
             href="https://twitter.com/mannupaaji"
             target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal text-white"
+            onClick={handleConnectWallet}
+            className="px-4 py-2 rounded-xl text-xs font-normal text-white cursor-pointer"
           >
             Connect Wallet →
           </CardItem>
@@ -53,3 +59,5 @@ export default function Buy() {
     </CardContainer>
   );
 }
+
+export default Buy;
