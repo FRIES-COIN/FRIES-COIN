@@ -36,7 +36,7 @@ const About: React.FC = () => {
               Vision
             </h4>
             <p className="mt-2 text-lg text-gray-300 font-rem">
-              We aim to become the go-to digital currency for all things fries.
+              We aim to become the go-to digital currency for all things fries.https://blockwisely.substack.com/p/74216980-986a-4a64-8155-fe7871be09cc
               Whether you're buying fries at your favorite restaurant or tipping
               a great fries recipe online, Fries Coin will be your currency of
               choice. Join us in celebrating the crispy, golden goodness of
