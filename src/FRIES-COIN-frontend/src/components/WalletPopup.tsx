@@ -6,6 +6,7 @@ declare global {
 
 import React, { useState } from "react";
 import { ThreeDots } from "react-loader-spinner";
+import { connectNFIDWallet, isNFIDWalletConnected, disconnectNFIDWallet } from '../util/nfidWallet';
 
 interface WalletPopupProps {
   onClose: () => void;
@@ -20,23 +21,28 @@ const WalletPopup: React.FC<WalletPopupProps> = ({
   const [connectionStatus, setConnectionStatus] = useState<
     "success" | "error" | null
   >(null);
+  const [walletType, setWalletType] = useState<'plug' | 'nfid' | null>(null);
 
   const connectPlugWallet = async () => {
     setIsConnecting(true);
     setConnectionStatus(null);
+    setWalletType("plug");
 
-    const canisterId = "br5f7-7uaaa-aaaaa-qaaca-cai";
+    const canisterId ="bd3sg-teaaa-aaaaa-qaaba-cai";
     const whitelist = [canisterId];
     const host = "http://127.0.0.1:4943/";
     const onConnectionUpdate = () => {
       console.log(
+        
         "Session data is: ",
-        window.ic.plug.sessionManager.sessionData
+       
+        (window as any).ic?.plug?.sessionManager?.sessionData
+      
       );
     };
 
     try {
-      const publicKey = await window.ic.plug.requestConnect({
+      const publicKey = await (window as any).ic.plug.requestConnect({
         whitelist,
         host,
         onConnectionUpdate,
@@ -50,6 +56,37 @@ const WalletPopup: React.FC<WalletPopupProps> = ({
       handlePurchasePopup();
     } catch (e) {
       console.log(e);
+      setConnectionStatus("error");
+      setTimeout(() => {
+        setConnectionStatus(null);
+      }, 3000);
+    } finally {
+      setIsConnecting(false);
+    }
+  };
+
+  const connectNFIDWalletHandler = async () => {
+    setIsConnecting(true);
+    setConnectionStatus(null);
+    setWalletType('nfid');
+
+    try {
+      const principal = await connectNFIDWallet();
+      if (principal) {
+        console.log(`The connected user's principal is:`, principal);
+        setConnectionStatus('success');
+        setTimeout(() => {
+          setConnectionStatus(null);
+        }, 3000);
+        handlePurchasePopup();
+      } else {
+        setConnectionStatus('error');
+        setTimeout(() => {
+          setConnectionStatus(null);
+        }, 3000);
+      }
+    } catch (error) {
+      console.error('Error connecting to NFID wallet:', error);
       setConnectionStatus("error");
       setTimeout(() => {
         setConnectionStatus(null);
@@ -80,10 +117,16 @@ const WalletPopup: React.FC<WalletPopupProps> = ({
             onClick={connectPlugWallet}
             disabled={isConnecting}
           >
-            {isConnecting ? "Connecting..." : "Plug Wallet"}
+            {isConnecting && walletType === 'plug' ? "Connecting..." : "Plug Wallet"}
           </button>
-          <button className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300">
-            NFiD
+          <button
+            className={`bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300 ${
+              isConnecting ? 'opacity-50 cursor-not-allowed' : ''
+            }`}
+            onClick={connectNFIDWalletHandler}
+            disabled={isConnecting}
+          >
+            {isConnecting && walletType === 'nfid' ? 'Connecting...' : 'NFID Wallet'}
           </button>
         </div>
         {isConnecting && (
