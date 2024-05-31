@@ -29,32 +29,40 @@ const Footer: React.FC = () => {
           >
             <div className="flex flex-col items-center justify-center p-1">
               <HiChatAlt2 color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">OpenChat</h1>
+              <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
+                OpenChat
+              </h1>
             </div>
           </a>
           <a href="https://x.com/FriesCoin" target="_blank">
             <div className=" flex flex-col items-center justify-center p-1">
               <FaTwitter color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Twitter(X)</h1>
+              <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
+                Twitter(X)
+              </h1>
             </div>
           </a>
 
           <a href="https://t.me/friescoin" target="_blank">
             <div className=" flex flex-col items-center justify-center p-1">
               <FaTelegram color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Telegram</h1>
+              <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
+                Telegram
+              </h1>
             </div>
           </a>
 
-          <a
+          {/* <a
             href="https://www.linkedin.com/company/fries-coin/"
             target="_blank"
           >
             <div className=" flex flex-col items-center justify-center p-1">
               <FaLinkedin color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Linkedin</h1>
+              <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
+                Linkedin
+              </h1>
             </div>
-          </a>
+          </a> */}
 
           <a
             href="https://www.instagram.com/friescoin?igsh=ejl0Znl1cjR3ZmZh&utm_source=qr"
@@ -62,7 +70,12 @@ const Footer: React.FC = () => {
           >
             <div className=" flex flex-col items-center justify-center p-1">
               <FaSquareInstagram color="#ffd543" size={44} />
-              <h1 className="font-bold text-gray-300">Telegram</h1>
+              <h1
+                className="md:font-bold text-sm md:text-lg
+   text-gray-300"
+              >
+                Telegram
+              </h1>
             </div>
           </a>
         </div>
@@ -76,7 +89,7 @@ const Footer: React.FC = () => {
         >
           $FRYS
         </a>{" "}
-        © 2024 Your Company
+        © 2024 FRIES COIN
       </p>
     </footer>
   );
