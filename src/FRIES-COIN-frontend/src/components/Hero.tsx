@@ -5,7 +5,11 @@ import { FaArrowDown } from "react-icons/fa";
 import fries from "../../public/images/fries.png";
 import useMedia from "../hooks/useMedia";
 
-const Hero = () => {
+type BuyProps = {
+  handleConnectWallet: () => void;
+};
+
+const Hero = ({ handleConnectWallet }: BuyProps) => {
   const isMobile = useMedia("(max-width: 768px)");
   const translateYValue = isMobile ? "0%" : "-50%";
 
@@ -29,7 +33,10 @@ const Hero = () => {
             everywhere.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <button className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300">
+            <button
+              className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300"
+              onClick={handleConnectWallet}
+            >
               Buy $FRYS{" "}
             </button>
             <a

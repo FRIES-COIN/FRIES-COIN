@@ -9,12 +9,12 @@ import Buy from "./components/BuyNow";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import WalletPopup from "./components/WalletPopup";
-import PurchaseFriesPopup from './components/PurchaseFries'
+import PurchaseFriesPopup from "./components/PurchaseFries";
 
 function App() {
   const [greeting, setGreeting] = useState("");
   const [showPopup, setShowPopup] = useState(false);
-  const [showPurchasePopUp, setshowPurchasePopUp] = useState(false); 
+  const [showPurchasePopUp, setshowPurchasePopUp] = useState(false);
 
   const handleConnectWallet = () => {
     setShowPopup(true);
@@ -25,12 +25,12 @@ function App() {
   };
 
   const handlePurchasePopup = () => {
-    setshowPurchasePopUp(true)
-  }
-  
+    setshowPurchasePopUp(true);
+  };
+
   const closePurchasePopup = () => {
-    setshowPurchasePopUp(false)
-  }
+    setshowPurchasePopUp(false);
+  };
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -44,11 +44,16 @@ function App() {
   return (
     <main className="bg-[#041c32] pb-12 md:pb-0">
       <Navbar />
-      {showPopup && <WalletPopup onClose={handleClosePopup} handlePurchasePopup={handlePurchasePopup} />} 
-      {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />} 
+      {showPopup && (
+        <WalletPopup
+          onClose={handleClosePopup}
+          handlePurchasePopup={handlePurchasePopup}
+        />
+      )}
+      {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />}
       <div className="mx-auto my-0 max-w-[1140px]">
-        <Hero />
-        <About />
+        <Hero handleConnectWallet={handleConnectWallet} />
+        <About handleConnectWallet={handleConnectWallet} />
         <Tokenomics />
         <Roadmap />
         <Buy handleConnectWallet={handleConnectWallet} />
