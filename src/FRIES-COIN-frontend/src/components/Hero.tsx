@@ -5,11 +5,11 @@ import { FaArrowDown } from "react-icons/fa";
 import fries from "../../public/images/fries.png";
 import useMedia from "../hooks/useMedia";
 
-type BuyProps = {
+type HeroProps = {
   handleConnectWallet: () => void;
 };
 
-const Hero = ({ handleConnectWallet }: BuyProps) => {
+const Hero = ({ handleConnectWallet }: HeroProps) => {
   const isMobile = useMedia("(max-width: 768px)");
   const translateYValue = isMobile ? "0%" : "-50%";
 

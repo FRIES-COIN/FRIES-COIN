@@ -53,7 +53,7 @@ function App() {
       {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />}
       <div className="mx-auto my-0 max-w-[1140px]">
         <Hero handleConnectWallet={handleConnectWallet} />
-        <About handleConnectWallet={handleConnectWallet} />
+        <About />
         <Tokenomics />
         <Roadmap />
         <Buy handleConnectWallet={handleConnectWallet} />
