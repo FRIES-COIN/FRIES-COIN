@@ -1,4 +1,6 @@
-import React from 'react';
+// ./src/components/Airdrops.tsx
+
+import React, { useState, useEffect } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import { CardContainer, CardBody, CardItem } from './ui/3d-card';
 import { TracingBeam } from './ui/tracing-beam';
@@ -8,6 +10,25 @@ import friesImage from '../../public/images/fries.png';
 const Airdrops: React.FC = () => {
   const isMobile = useMedia("(max-width: 768px)");
   const translateYValue = isMobile ? "0%" : "-50%";
+  const [airdropUsers, setAirdropUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Fetch airdrop users data from the backend
+    const fetchAirdropUsers = async () => {
+      try {
+        const response = await fetch('/api/airdrop-users');
+        const data = await response.json();
+        setAirdropUsers(data);
+        setLoading(false);
+      } catch (error) {
+        console.error('Error fetching airdrop users:', error);
+        setLoading(false);
+      }
+    };
+
+    fetchAirdropUsers();
+  }, []);
 
   const friesAnimation = useSpring({
     from: { transform: "translateY(-300%)" },
