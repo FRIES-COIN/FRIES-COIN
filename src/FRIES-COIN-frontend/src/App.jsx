@@ -12,6 +12,7 @@ import WalletPopup from "./components/WalletPopup";
 import PurchaseFriesPopup from "./components/PurchaseFries";
 import Whitepaper from "./components/Whitepaper";
 import Airdrops from "./components/Airdrops";
+import Features from "./components/Features";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -68,6 +69,7 @@ function App() {
             } />
             <Route path="/whitepaper" element={<Whitepaper />} />
             <Route path="/airdrops" element={<Airdrops />} />
+            <Route path="/features" element={<Features />} />
           </Routes>
         </div>
         <Footer />
