@@ -55,19 +55,24 @@ function App() {
             handlePurchasePopup={handlePurchasePopup}
           />
         )}
-        {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />}
-        <div className="mx-auto my-0 max-w-[1140px]">
+        {showPurchasePopUp && (
+          <PurchaseFriesPopup onClose={closePurchasePopup} />
+        )}
+        <div className="">
           <Routes>
-            <Route path="/" element={
-              <>
-                <Hero handleConnectWallet={handleConnectWallet} />
-                <About />
-                <Tokenomics />
-                <Roadmap />
-                <Buy handleConnectWallet={handleConnectWallet} />
-                <FAQ />
-              </>
-            } />
+            <Route
+              path="/"
+              element={
+                <div className="mx-auto my-0 max-w-[1140px]">
+                  <Hero handleConnectWallet={handleConnectWallet} />
+                  <About />
+                  <Tokenomics />
+                  <Roadmap />
+                  <Buy handleConnectWallet={handleConnectWallet} />
+                  <FAQ />
+                </div>
+              }
+            />
             <Route path="/whitepaper" element={<Whitepaper />} />
             <Route path="/airdrops" element={<Airdrops />} />
             <Route path="/features" element={<Features />} />
