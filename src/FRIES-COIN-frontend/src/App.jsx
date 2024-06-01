@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import { FRIES_COIN_backend } from "declarations/FRIES-COIN-backend";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
@@ -10,6 +10,8 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import WalletPopup from "./components/WalletPopup";
 import PurchaseFriesPopup from "./components/PurchaseFries";
+import Whitepaper from "./components/Whitepaper";
+import Airdrops from "./components/Airdrops";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -42,26 +44,35 @@ function App() {
   }
 
   return (
-    <main className="bg-[#041c32] pb-12 md:pb-0">
-      <Navbar />
-      {showPopup && (
-        <WalletPopup
-          onClose={handleClosePopup}
-          handlePurchasePopup={handlePurchasePopup}
-        />
-      )}
-      {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />}
-      <div className="mx-auto my-0 max-w-[1140px]">
-        <Hero handleConnectWallet={handleConnectWallet} />
-        <About />
-        <Tokenomics />
-        <Roadmap />
-        <Buy handleConnectWallet={handleConnectWallet} />
-        <FAQ />
-      </div>
-
-      <Footer />
-    </main>
+    <Router>
+      <main className="bg-[#041c32] pb-12 md:pb-0">
+        <Navbar />
+        {showPopup && (
+          <WalletPopup
+            onClose={handleClosePopup}
+            handlePurchasePopup={handlePurchasePopup}
+          />
+        )}
+        {showPurchasePopUp && <PurchaseFriesPopup onClose={closePurchasePopup} />}
+        <div className="mx-auto my-0 max-w-[1140px]">
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero handleConnectWallet={handleConnectWallet} />
+                <About />
+                <Tokenomics />
+                <Roadmap />
+                <Buy handleConnectWallet={handleConnectWallet} />
+                <FAQ />
+              </>
+            } />
+            <Route path="/whitepaper" element={<Whitepaper />} />
+            <Route path="/airdrops" element={<Airdrops />} />
+          </Routes>
+        </div>
+        <Footer />
+      </main>
+    </Router>
   );
 }
 
