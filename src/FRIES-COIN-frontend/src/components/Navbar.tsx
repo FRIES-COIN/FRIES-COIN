@@ -35,6 +35,12 @@ export default function Navbar() {
             >
               Whitepaper
             </Link>
+            <Link
+              className="mx-4 text-gray-300 font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+              to="/developer-docs"
+            >
+              Docs
+            </Link>
           </div>
         </div>
 
