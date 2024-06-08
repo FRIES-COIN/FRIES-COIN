@@ -33,7 +33,7 @@ const Whitepaper: React.FC = () => {
               translateZ={60}
               className="text-lg text-gray-300 font-rem"
             >
-              Fries Coin (FRIES) is a revolutionary meme coin with a utility
+              Fries Coin (FRYS) is a revolutionary meme coin with a utility
               twist, designed for all fries lovers around the world. Built on
               the{" "}
               <span className="text-[#ffd543] font-bold">
@@ -41,7 +41,7 @@ const Whitepaper: React.FC = () => {
               </span>
               , Fries Coin aims to become the go-to currency for purchasing
               fries and related products at restaurants and food outlets
-              globally. Additionally, FRIES serves as a{" "}
+              globally. Additionally, FRYS serves as a{" "}
               <span className="text-[#ffd543] font-bold">governance token</span>
               , allowing its holders to vote on proposals and changes, ensuring
               the community has a say in its future development.
@@ -164,7 +164,7 @@ const Whitepaper: React.FC = () => {
               className="text-lg text-gray-300 font-rem"
             >
               <strong className="text-[#ffd543] font-rem">Total Supply:</strong>{" "}
-              21,000,000 FRIES
+              21,000,000 FRYS
               <br />
               <br />
               <strong className="text-[#ffd543] font-rem">
@@ -173,37 +173,22 @@ const Whitepaper: React.FC = () => {
               <br />
               <ul className="list-disc list-inside mt-4 font-rem">
                 <li>
-                  <strong className="text-[#ffd543]">
-                    PoUW Consensus Mechanism:
-                  </strong>{" "}
-                  Fries Coin operates on the Internet Computer blockchain,
-                  utilizing the PoUW consensus mechanism. PoUW rewards
-                  participants for providing computational resources to the
-                  network, contributing to its security and functionality.
-                </li>
-                <li>
-                  <strong className="text-[#ffd543]">
+                  <strong className="text-[#ffd543] font-rem">
                     Initial Distribution:
-                  </strong>{" "}
-                  Genesis Block: Initial distribution of FRIES:
+                  </strong>
                   <ul className="list-disc list-inside mt-4 ml-8">
                     <li>
-                      Early Contributors and Team: 45% (9,450,000 FRIES) - Each
-                      team member receives: 859,090.91 FRIES (9,450,000 FRIES /
-                      11)
+                      Early Contributors and Team: 20% (4,200,000 FRYS) - Each
+                      team member receives: 381,818.18 FRYS (4,200,000 FRYS / 11)
                     </li>
                     <li>
-                      Community Building and Rewards: 5% (1,050,000 FRIES)
+                      ICP Hubs: 20% (4,200,000 FRYS) - Each ICP Hub receives:
+                      175,000 FRYS (4,200,000 FRYS / 24)
                     </li>
-                    <li>Development Fund: 5% (1,050,000 FRIES)</li>
+                    <li>
+                      Community Building, Rewards, and Airdrop: 60% (12,600,000 FRYS)
+                    </li>
                   </ul>
-                </li>
-                <li>
-                  <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
-                  Participants contribute computational resources to the network
-                  and are rewarded with FRIES tokens. Mining rewards are
-                  distributed to validators based on their contribution to the
-                  network's computational work.
                 </li>
               </ul>
             </CardItem>
@@ -242,7 +227,7 @@ const Whitepaper: React.FC = () => {
                     Community Building and Adoption:
                   </strong>{" "}
                   Develop partnerships with restaurants and food outlets to
-                  accept FRIES as payment. Implement loyalty programs and
+                  accept FRYS as payment. Implement loyalty programs and
                   incentives to encourage adoption and usage of Fries Coin in
                   the community.
                 </li>
