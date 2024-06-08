@@ -173,22 +173,41 @@ const Whitepaper: React.FC = () => {
               <br />
               <ul className="list-disc list-inside mt-4 font-rem">
                 <li>
-                  <strong className="text-[#ffd543] font-rem">
+                  <strong className="text-[#ffd543]">
+                    PoUW Consensus Mechanism:
+                  </strong>{" "}
+                  Fries Coin operates on the Internet Computer blockchain,
+                  utilizing the PoUW consensus mechanism. PoUW rewards
+                  participants for providing computational resources to the
+                  network, contributing to its security and functionality.
+                </li>
+                <li>
+                  <strong className="text-[#ffd543]">
                     Initial Distribution:
-                  </strong>
+                  </strong>{" "}
+                  Genesis Block: Initial distribution of FRIES:
                   <ul className="list-disc list-inside mt-4 ml-8">
                     <li>
-                      Early Contributors and Team: 20% (4,200,000 FRYS) - Each
-                      team member receives: 381,818.18 FRYS (4,200,000 FRYS / 11)
+                      Early Contributors and Team: 45% (9,450,000 FRIES) - Each
+                      team member receives: 859,090.91 FRIES (9,450,000 FRIES /
+                      11)
                     </li>
                     <li>
                       ICP Hubs: 20% (4,200,000 FRYS) - Each ICP Hub receives:
                       175,000 FRYS (4,200,000 FRYS / 24)
                     </li>
                     <li>
-                      Community Building, Rewards, and Airdrop: 60% (12,600,000 FRYS)
+                      Community Building and Rewards: 5% (1,050,000 FRIES)
                     </li>
+                    <li>Development Fund: 5% (1,050,000 FRIES)</li>
                   </ul>
+                </li>
+                <li>
+                  <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
+                  Participants contribute computational resources to the network
+                  and are rewarded with FRIES tokens. Mining rewards are
+                  distributed to validators based on their contribution to the
+                  network's computational work.
                 </li>
               </ul>
             </CardItem>
@@ -212,7 +231,7 @@ const Whitepaper: React.FC = () => {
                   <strong className="text-[#ffd543]">
                     Decentralized Governance:
                   </strong>{" "}
-                  FRIES holders participate in decentralized governance through
+                  FRYS holders participate in decentralized governance through
                   proposals and voting mechanisms on the Internet Computer.
                 </li>
                 <li>
@@ -258,7 +277,7 @@ const Whitepaper: React.FC = () => {
               <strong className="text-[#ffd543]">
                 Decentralized Governance:
               </strong>{" "}
-              Proposals are submitted and voted on by FRIES holders using the
+              Proposals are submitted and voted on by FRYS holders using the
               Internet Computer's governance mechanism.
               <br />
               <br />
