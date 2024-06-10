@@ -9,7 +9,7 @@ const CodeBlock: React.FC<{ code: string }> = ({ code }) => {
 
   return (
     <div className="relative mb-4">
-      <pre className="bg-gray-800 text-white p-4 rounded">
+      <pre className="bg-gray-800 text-white p-4 rounded overflow-auto">
         <code>{code}</code>
       </pre>
       <button
@@ -32,7 +32,7 @@ type Section = (typeof sections)[number];
 
 const sectionContent: Record<Section, JSX.Element> = {
   "Getting Started": (
-    <div className=" font-rem">
+    <div className="font-rem">
       <h1 className="text-3xl font-bold mb-4">Getting Started</h1>
       <p className="mb-4">
         To get started, you'll need to set up your development environment.
@@ -61,7 +61,7 @@ const sectionContent: Record<Section, JSX.Element> = {
     </div>
   ),
   "API Reference": (
-    <div className=" font-rem">
+    <div className="font-rem">
       <h1 className="text-3xl font-bold mb-4">API Reference</h1>
       <h2 className="text-2xl font-semibold mb-2">Get Balance</h2>
       <CodeBlock code={`GET /api/balance`} />
@@ -102,7 +102,7 @@ const sectionContent: Record<Section, JSX.Element> = {
     </div>
   ),
   "Smart Contract Development": (
-    <div className=" font-rem">
+    <div className="font-rem">
       <h1 className="text-3xl font-bold mb-4">Smart Contract Development</h1>
       <p className="mb-4">
         To develop smart contracts for Fries Coin, follow the guidelines below.
@@ -116,27 +116,21 @@ const sectionContent: Record<Section, JSX.Element> = {
 };
 
 const DeveloperDocs: React.FC = () => {
-  const [activeSection, setActiveSection] =
-    useState<Section>("Getting Started");
+  const [activeSection, setActiveSection] = useState<Section>("Getting Started");
 
   const renderSectionContent = (section: Section) => {
     return sectionContent[section];
   };
 
   return (
-    <div className="flex bg-[#041c32] text-white min-h-screen ">
-      <motion.div
-        initial={{ x: -200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.5 }}
-        className="w-1/4 bg-gray-900 p-4"
-      >
+    <div className="flex flex-col bg-[#041c32] text-white min-h-screen overflow-x-hidden">
+      <div className="bg-gray-900 p-4 w-full overflow-x-hidden">
         <h2 className="text-xl font-bold mb-4 font-rem">Developer Docs</h2>
-        <ul className=" font-rem">
+        <ul className="flex flex-col md:flex-row md:space-x-4 font-rem">
           {sections.map((section) => (
             <li
               key={section}
-              className={`cursor-pointer mb-2 p-2 rounded ${
+              className={`cursor-pointer mb-2 md:mb-0 p-2 rounded ${
                 activeSection === section
                   ? "bg-gray-700"
                   : "bg-gray-800 hover:bg-gray-700"
@@ -147,12 +141,12 @@ const DeveloperDocs: React.FC = () => {
             </li>
           ))}
         </ul>
-      </motion.div>
+      </div>
       <motion.div
-        initial={{ x: 200, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="w-3/4 p-8"
+        className="p-4 md:p-8"
       >
         {renderSectionContent(activeSection)}
       </motion.div>

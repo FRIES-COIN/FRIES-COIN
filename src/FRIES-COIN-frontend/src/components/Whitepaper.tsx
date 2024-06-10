@@ -33,7 +33,7 @@ const Whitepaper: React.FC = () => {
               translateZ={60}
               className="text-lg text-gray-300 font-rem"
             >
-              Fries Coin (FRIES) is a revolutionary meme coin with a utility
+              Fries Coin (FRYS) is a revolutionary meme coin with a utility
               twist, designed for all fries lovers around the world. Built on
               the{" "}
               <span className="text-[#ffd543] font-bold">
@@ -41,7 +41,7 @@ const Whitepaper: React.FC = () => {
               </span>
               , Fries Coin aims to become the go-to currency for purchasing
               fries and related products at restaurants and food outlets
-              globally. Additionally, FRIES serves as a{" "}
+              globally. Additionally, FRYS serves as a{" "}
               <span className="text-[#ffd543] font-bold">governance token</span>
               , allowing its holders to vote on proposals and changes, ensuring
               the community has a say in its future development.
@@ -164,7 +164,7 @@ const Whitepaper: React.FC = () => {
               className="text-lg text-gray-300 font-rem"
             >
               <strong className="text-[#ffd543] font-rem">Total Supply:</strong>{" "}
-              21,000,000 FRIES
+              21,000,000 FRYS
               <br />
               <br />
               <strong className="text-[#ffd543] font-rem">
@@ -191,6 +191,10 @@ const Whitepaper: React.FC = () => {
                       Early Contributors and Team: 45% (9,450,000 FRIES) - Each
                       team member receives: 859,090.91 FRIES (9,450,000 FRIES /
                       11)
+                    </li>
+                    <li>
+                      ICP Hubs: 20% (4,200,000 FRYS) - Each ICP Hub receives:
+                      175,000 FRYS (4,200,000 FRYS / 24)
                     </li>
                     <li>
                       Community Building and Rewards: 5% (1,050,000 FRIES)
@@ -227,7 +231,7 @@ const Whitepaper: React.FC = () => {
                   <strong className="text-[#ffd543]">
                     Decentralized Governance:
                   </strong>{" "}
-                  FRIES holders participate in decentralized governance through
+                  FRYS holders participate in decentralized governance through
                   proposals and voting mechanisms on the Internet Computer.
                 </li>
                 <li>
@@ -242,7 +246,7 @@ const Whitepaper: React.FC = () => {
                     Community Building and Adoption:
                   </strong>{" "}
                   Develop partnerships with restaurants and food outlets to
-                  accept FRIES as payment. Implement loyalty programs and
+                  accept FRYS as payment. Implement loyalty programs and
                   incentives to encourage adoption and usage of Fries Coin in
                   the community.
                 </li>
@@ -273,7 +277,7 @@ const Whitepaper: React.FC = () => {
               <strong className="text-[#ffd543]">
                 Decentralized Governance:
               </strong>{" "}
-              Proposals are submitted and voted on by FRIES holders using the
+              Proposals are submitted and voted on by FRYS holders using the
               Internet Computer's governance mechanism.
               <br />
               <br />

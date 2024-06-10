@@ -1,14 +1,12 @@
 import React from "react";
 import logo from "../../public/images/logo.png";
-import { FaTelegram } from "react-icons/fa";
+import { FaTelegram, FaTwitter } from "react-icons/fa";
 import { HiChatAlt2 } from "react-icons/hi";
-import { FaTwitter } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
-import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
-export default function Navbar() {
-  const [toggle, setToggle] = React.useState(false);
+const Navbar: React.FC = () => {
   const [menu, setMenu] = React.useState(false);
   const navigation = useNavigate();
 
@@ -16,11 +14,18 @@ export default function Navbar() {
     setMenu(false);
     navigation(path);
   };
+
+  const handleToggle = () => {
+    setMenu(!menu);
+  };
+
   return (
-    <nav className="bg-[#041c32] text-white">
+    <nav className="bg-[#041c32] text-white fixed w-full z-50">
       {/* mobile menu */}
       <div
-        className={`flex-col ${menu ? "flex" : "hidden"} flex items-center justify-center md:hidden h-screen relative`}
+        className={`flex-col ${
+          menu ? "flex" : "hidden"
+        } flex items-center justify-center md:hidden h-screen relative`}
       >
         <div className="absolute top-5 left-10">
           <IoMdClose color="#ffd543" size={44} onClick={() => setMenu(!menu)} />
@@ -70,7 +75,7 @@ export default function Navbar() {
             src={logo}
             alt="logo"
             className="w-10 h-10"
-            onClick={() => setMenu(!menu)}
+            onClick={() => nav("/")}
           />
           <Link to="/" className="font-rem text-[#ffd543]">
             $FRYS
@@ -109,23 +114,52 @@ export default function Navbar() {
           <a
             href="https://oc.app/community/k3fk6-gaaaa-aaaar-bav6a-cai/channel/248604123721879774877830511727450740199"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
               <HiChatAlt2 color="#ffd543" size={24} />
             </div>
           </a>
-          <a href="https://x.com/FriesCoin" target="_blank">
+          <a href="https://x.com/FriesCoin" target="_blank" rel="noopener noreferrer">
             <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
               <FaTwitter color="#ffd543" size={24} />
             </div>
           </a>
-          <a href="https://t.me/friescoin" target="_blank">
+          <a href="https://t.me/friescoin" target="_blank" rel="noopener noreferrer">
             <div className="border-[1px] cursor-pointer border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
               <FaTelegram color="#ffd543" size={24} />
             </div>
           </a>
         </div>
+
+        <div className="md:hidden flex items-center z-50">
+          <motion.button
+            onClick={handleToggle}
+            className="focus:outline-none flex flex-col items-center justify-center w-10 h-10 relative"
+          >
+            <motion.div
+              initial={{ rotate: 0, y: 0 }}
+              animate={{ rotate: menu ? 45 : 0, y: menu ? 8 : 0 }}
+              transition={{ duration: 0.3 }}
+              className="block w-6 h-0.5 bg-[#ffd543] mb-1"
+            />
+            <motion.div
+              initial={{ opacity: 1 }}
+              animate={{ opacity: menu ? 0 : 1 }}
+              transition={{ duration: 0.3 }}
+              className="block w-6 h-0.5 bg-[#ffd543] mb-1"
+            />
+            <motion.div
+              initial={{ rotate: 0, y: 0 }}
+              animate={{ rotate: menu ? -45 : 0, y: menu ? -8 : 0 }}
+              transition={{ duration: 0.3 }}
+              className="block w-6 h-0.5 bg-[#ffd543]"
+            />
+          </motion.button>
+        </div>
       </div>
     </nav>
   );
-}
+};
+
+export default Navbar;
