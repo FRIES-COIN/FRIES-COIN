@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
             </div>
           </a>
 
-          {/* <a
+          <a
             href="https://www.linkedin.com/company/fries-coin/"
             target="_blank"
           >
@@ -62,7 +62,7 @@ const Footer: React.FC = () => {
                 Linkedin
               </h1>
             </div>
-          </a> */}
+          </a>
 
           <a
             href="https://www.instagram.com/friescoin?igsh=ejl0Znl1cjR3ZmZh&utm_source=qr"
