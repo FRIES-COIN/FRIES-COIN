@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
                 className="md:font-bold text-sm md:text-lg
    text-gray-300"
               >
-                Telegram
+                Instagram
               </h1>
             </div>
           </a>
