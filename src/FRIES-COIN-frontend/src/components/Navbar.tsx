@@ -5,6 +5,7 @@ import { HiChatAlt2 } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
 import { IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion";
+import ocLogo from "../../public/images/oc-logo.svg";
 
 const Navbar: React.FC = () => {
   const [menu, setMenu] = React.useState(false);
@@ -103,9 +104,9 @@ const Navbar: React.FC = () => {
             </Link>
             <Link
               className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/developer-docs"
+              to="/roadmap"
             >
-              Docs
+              Roadmap
             </Link>
           </div>
         </div>
@@ -116,16 +117,24 @@ const Navbar: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
-              <HiChatAlt2 color="#ffd543" size={24} />
+            <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center">
+              <img src={ocLogo} alt="oc" className="object-cover" />
             </div>
           </a>
-          <a href="https://x.com/FriesCoin" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/FriesCoin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="border-[1px] border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
               <FaTwitter color="#ffd543" size={24} />
             </div>
           </a>
-          <a href="https://t.me/friescoin" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://t.me/friescoin"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="border-[1px] cursor-pointer border-[#ffd543] rounded-full w-[30px] h-[30px] flex items-center justify-center p-1">
               <FaTelegram color="#ffd543" size={24} />
             </div>

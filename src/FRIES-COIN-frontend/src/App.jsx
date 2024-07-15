@@ -67,7 +67,7 @@ function App() {
                   <Hero handleConnectWallet={handleConnectWallet} />
                   <About />
                   <Tokenomics />
-                  <Roadmap />
+                  {/* <Roadmap /> */}
                   <Buy handleConnectWallet={handleConnectWallet} />
                   <FAQ />
                 </div>
@@ -76,7 +76,7 @@ function App() {
             <Route path="/whitepaper" element={<Whitepaper />} />
             <Route path="/airdrops" element={<Airdrops />} />
             <Route path="/features" element={<Features />} />
-            <Route path="/developer-docs" element={<DeveloperDocs />} />
+            <Route path="/roadmap" element={<Roadmap />} />
           </Routes>
         </div>
         <Footer />

@@ -10,10 +10,11 @@ import {
 import sauceImage from "../../public/sauce.png";
 
 const data = [
-  { name: "Early Contributors and Team", value: 2100000 },
-  { name: "ICP Hubs", value: 2100000 },
+  { name: "Early Contributors and Team", value: 1050000 },
+  { name: "ICP Hubs", value: 1050000 },
   { name: "Community Building and Rewards", value: 1050000 },
   { name: "Liquidity", value: 3150000 },
+  { name: "Available for Mining", value: 14700000 },
 ];
 
 const COLORS = ["#FFBB28", "#FF8042", "#00C49F"];
@@ -119,9 +120,9 @@ const Tokenomics: React.FC = () => {
                           FRIES / 11)
                         </li>
                         <li>
-                    ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
-                    43,750 FRYS (1,050,000 FRYS / 24)
-                    </li>
+                          ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
+                          43,750 FRYS (1,050,000 FRYS / 24)
+                        </li>
                         <li>
                           Community Building and Rewards: 5% (1,050,000 FRIES)
                         </li>

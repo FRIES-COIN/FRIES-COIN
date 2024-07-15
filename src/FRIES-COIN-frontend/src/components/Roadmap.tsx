@@ -9,39 +9,45 @@ import finalImage from "../../public/final.png";
 
 export default function Roadmap() {
   return (
-    <TracingBeam className="px-6">
-      <h1 className="text-4xl font-bold text-[#ffd543] text-center font-rem my-4">
-        $FRYS COIN Roadmap
-      </h1>
-      <div className="max-w-2xl mx-auto antialiased pt-4 relative">
-        {dummyContent.map((item, index) => (
-          <div key={`content-${index}`} className="mb-10">
-            <h2
-              className={`rounded-full text-sm w-fit px-4 py-1 mb-4 font-rem ${item.badge === "Done" ? "bg-[#ffd543] text-black" : "bg-gray-700 text-white"}`}
-            >
-              {item.badge}
-            </h2>
+    <section className="">
+      <TracingBeam className="px-6">
+        <h1 className="text-4xl font-bold text-[#ffd543] text-center font-rem">
+          $FRYS COIN Roadmap
+        </h1>
+        <div className="max-w-2xl mx-auto antialiased pt-4 relative mt-4">
+          {dummyContent.map((item, index) => (
+            <div key={`content-${index}`} className="mb-10">
+              <h2
+                className={`rounded-full text-sm w-fit px-4 py-1 mb-4 font-rem ${
+                  item.badge === "Done"
+                    ? "bg-[#ffd543] text-black"
+                    : "bg-gray-700 text-white"
+                }`}
+              >
+                {item.badge}
+              </h2>
 
-            <p className={twMerge("font-rem text-xl mb-4 text-gray-300")}>
-              {item.title}
-            </p>
+              <p className={twMerge("font-rem text-xl mb-4 text-gray-300")}>
+                {item.title}
+              </p>
 
-            <div className="text-sm text-gray-100 prose prose-sm dark:prose-invert ">
-              {item?.image && (
-                <img
-                  src={item.image}
-                  alt="roadmap thumbnail"
-                  height="1000"
-                  width="1000"
-                  className="rounded-lg mb-10 object-cover"
-                />
-              )}
-              {item.description}
+              <div className="text-sm text-gray-100 prose prose-sm dark:prose-invert ">
+                {item?.image && (
+                  <img
+                    src={item.image}
+                    alt="roadmap thumbnail"
+                    height="1000"
+                    width="1000"
+                    className="rounded-lg mb-10 object-cover"
+                  />
+                )}
+                {item.description}
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-    </TracingBeam>
+          ))}
+        </div>
+      </TracingBeam>
+    </section>
   );
 }
 
