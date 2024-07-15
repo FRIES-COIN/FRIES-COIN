@@ -14,6 +14,7 @@ import Whitepaper from "./components/Whitepaper";
 import Airdrops from "./components/Airdrops";
 import Features from "./components/Features";
 import DeveloperDocs from "./components/DeveloperDocs";
+import Mascot from "./components/ui/Mascot";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -67,6 +68,7 @@ function App() {
                   <Hero handleConnectWallet={handleConnectWallet} />
                   <About />
                   <Tokenomics />
+                  <Mascot />
                   {/* <Roadmap /> */}
                   <Buy handleConnectWallet={handleConnectWallet} />
                   <FAQ />
