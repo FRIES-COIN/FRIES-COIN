@@ -126,7 +126,7 @@ const Features: React.FC = () => {
                   >
                     Develop partnerships with restaurants and food outlets to
                     accept{" "}
-                    <span className="text-[#ffd543] font-bold">FRIES</span> as
+                    <span className="text-[#ffd543] font-bold">FRYS</span> as
                     payment. Implement loyalty programs and incentives to
                     encourage adoption and usage of Fries Coin in the community.
                   </CardItem>
@@ -234,7 +234,7 @@ const Features: React.FC = () => {
                   >
                     Launch an NFT marketplace where users can buy, sell, and
                     trade{" "}
-                    <span className="text-[#ffd543] font-bold">FRIES</span>
+                    <span className="text-[#ffd543] font-bold">FRYS</span>
                     -themed NFTs, promoting community engagement and creativity.
                   </CardItem>
                 </CardBody>
@@ -256,7 +256,7 @@ const Features: React.FC = () => {
                   >
                     Integrate with decentralized finance (DeFi) platforms to
                     offer staking, lending, and borrowing of{" "}
-                    <span className="text-[#ffd543] font-bold">FRIES</span>{" "}
+                    <span className="text-[#ffd543] font-bold">FRYS</span>{" "}
                     tokens.
                   </CardItem>
                 </CardBody>
@@ -278,7 +278,7 @@ const Features: React.FC = () => {
                   >
                     Ensure cross-chain compatibility with other blockchains like
                     Ethereum and Binance Smart Chain, enabling{" "}
-                    <span className="text-[#ffd543] font-bold">FRIES</span> to
+                    <span className="text-[#ffd543] font-bold">FRYS</span> to
                     be used across multiple platforms.
                   </CardItem>
                 </CardBody>
@@ -300,7 +300,7 @@ const Features: React.FC = () => {
                   >
                     Provide advanced analytics and insights for users and
                     developers to track the performance and usage of{" "}
-                    <span className="text-[#ffd543] font-bold">FRIES</span>{" "}
+                    <span className="text-[#ffd543] font-bold">FRYS</span>{" "}
                     tokens.
                   </CardItem>
                 </CardBody>

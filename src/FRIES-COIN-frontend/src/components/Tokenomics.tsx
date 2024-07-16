@@ -113,20 +113,20 @@ const Tokenomics: React.FC = () => {
                       <span>Genesis Block:</span>
                       <ul className="list-inside list-item pl-4">
                         <li>
-                          Early Contributors and Team: 5% (1,050,000 FRIES)
+                          Early Contributors and Team: 5% (1,050,000 FRYS)
                         </li>
                         <li>
-                          Each team member receives: 95454.5455 FRIES (1,050,000
-                          FRIES / 11)
+                          Each team member receives: 95454.5455 FRYS (1,050,000
+                          FRYS / 11)
                         </li>
                         <li>
                           ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
                           43,750 FRYS (1,050,000 FRYS / 24)
                         </li>
                         <li>
-                          Community Building and Rewards: 5% (1,050,000 FRIES)
+                          Community Building and Rewards: 5% (1,050,000 FRYS)
                         </li>
-                        <li>Liquidity: 15% (3,150,000 FRIES)</li>
+                        <li>Liquidity: 15% (3,150,000 FRYS)</li>
                       </ul>
                     </li>
                   </ul>
@@ -134,7 +134,7 @@ const Tokenomics: React.FC = () => {
                 <li>
                   <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
                   Participants contribute computational resources to the network
-                  and are rewarded with FRIES tokens.
+                  and are rewarded with FRYS tokens.
                 </li>
               </ul>
             </div>

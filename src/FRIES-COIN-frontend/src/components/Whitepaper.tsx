@@ -185,11 +185,11 @@ const Whitepaper: React.FC = () => {
                   <strong className="text-[#ffd543]">
                     Initial Distribution:
                   </strong>{" "}
-                  Genesis Block: Initial distribution of FRIES:
+                  Genesis Block: Initial distribution of FRYS:
                   <ul className="list-disc list-inside mt-4 ml-8">
                     <li>
-                      Early Contributors and Team: 5% (1,050,000 FRIES) - Each
-                      team member receives: 95454.5455 FRIES (1,050,000 FRIES /
+                      Early Contributors and Team: 5% (1,050,000 FRYS) - Each
+                      team member receives: 95454.5455 FRYS (1,050,000 FRYS /
                       11)
                     </li>
                     <li>
@@ -198,15 +198,15 @@ const Whitepaper: React.FC = () => {
                     </li>
                     
                     <li>
-                      Community Building and Rewards: 5% (1,050,000 FRIES)
+                      Community Building and Rewards: 5% (1,050,000 FRYS)
                     </li>
-                    <li> Liquidity: 15% (3,150,000 FRIES)</li>
+                    <li> Liquidity: 15% (3,150,000 FRYS)</li>
                   </ul>
                 </li>
                 <li>
                   <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
                   Participants contribute computational resources to the network
-                  and are rewarded with FRIES tokens. Mining rewards are
+                  and are rewarded with FRYS tokens. Mining rewards are
                   distributed to validators based on their contribution to the
                   network's computational work.
                 </li>
