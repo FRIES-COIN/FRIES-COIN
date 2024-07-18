@@ -9,7 +9,7 @@ import finalImage from "../../public/final.png";
 
 export default function Roadmap() {
   return (
-    <section className="">
+    <section className="bg-dark">
       <TracingBeam className="px-6">
         <h1 className="text-4xl font-bold text-[#ffd543] text-center font-rem">
           $FRYS COIN Roadmap
