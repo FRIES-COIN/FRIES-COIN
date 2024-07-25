@@ -58,15 +58,6 @@ const Navbar: React.FC = () => {
             >
               WHITEPAPER
             </Link>
-
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/developer-docs"
-              onClick={() => nav("/developer-docs")}
-            >
-              DOCS
-            </Link>
           </div>
         </div>
       </div>
