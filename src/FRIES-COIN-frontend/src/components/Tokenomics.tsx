@@ -10,11 +10,11 @@ import {
 import sauceImage from "../../public/sauce.png";
 
 const data = [
-  { name: "Early Contributors and Team", value: 1050000 },
-  { name: "ICP Hubs", value: 1050000 },
-  { name: "Community Building and Rewards", value: 1050000 },
-  { name: "Liquidity", value: 3150000 },
-  { name: "Available for Mining", value: 14700000 },
+  { name: "Early Contributors and Team"},
+  { name: "ICP Hubs" },
+  { name: "Community Building and Rewards" },
+  { name: "Liquidity"},
+  { name: "Available for Mining"},
 ];
 
 const COLORS = ["#FFBB28", "#FF8042", "#00C49F"];
@@ -113,20 +113,16 @@ const Tokenomics: React.FC = () => {
                       <span>Genesis Block:</span>
                       <ul className="list-inside list-item pl-4">
                         <li>
-                          Early Contributors and Team: 5% (1,050,000 FRIES)
+                          Early Contributors and Team: 5% 
+                        </li>
+                     
+                        <li>
+                          ICP Hubs: 5% 
                         </li>
                         <li>
-                          Each team member receives: 95454.5455 FRIES (1,050,000
-                          FRIES / 11)
+                          Community Building and Rewards: 5%
                         </li>
-                        <li>
-                          ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
-                          43,750 FRYS (1,050,000 FRYS / 24)
-                        </li>
-                        <li>
-                          Community Building and Rewards: 5% (1,050,000 FRIES)
-                        </li>
-                        <li>Liquidity: 15% (3,150,000 FRIES)</li>
+                        <li>Liquidity: 15%</li>
                       </ul>
                     </li>
                   </ul>

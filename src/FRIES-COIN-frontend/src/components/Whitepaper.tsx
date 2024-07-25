@@ -188,19 +188,17 @@ const Whitepaper: React.FC = () => {
                   Genesis Block: Initial distribution of FRIES:
                   <ul className="list-disc list-inside mt-4 ml-8">
                     <li>
-                      Early Contributors and Team: 5% (1,050,000 FRIES) - Each
-                      team member receives: 95454.5455 FRIES (1,050,000 FRIES /
-                      11)
+                      Early Contributors and Team: 5% 
+
                     </li>
                     <li>
-                    ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
-                    43,750 FRYS (1,050,000 FRYS / 24)
+                    ICP Hubs: 5% 
                     </li>
                     
                     <li>
-                      Community Building and Rewards: 5% (1,050,000 FRIES)
+                      Community Building and Rewards: 5% 
                     </li>
-                    <li> Liquidity: 15% (3,150,000 FRIES)</li>
+                    <li> Liquidity: 15% </li>
                   </ul>
                 </li>
                 <li>
