@@ -113,33 +113,17 @@ const Tokenomics: React.FC = () => {
                       <span>Genesis Block:</span>
                       <ul className="list-inside list-item pl-4">
                         <li>
-<<<<<<< HEAD
                           Early Contributors and Team: 5% 
                         </li>
-                     
+                        
+                       
                         <li>
                           ICP Hubs: 5% 
                         </li>
                         <li>
-                          Community Building and Rewards: 5%
+                          Community Building and Rewards: 5% 
                         </li>
-                        <li>Liquidity: 15%</li>
-=======
-                          Early Contributors and Team: 5% (1,050,000 FRYS)
-                        </li>
-                        <li>
-                          Each team member receives: 95454.5455 FRYS (1,050,000
-                          FRYS / 11)
-                        </li>
-                        <li>
-                          ICP Hubs: 5% (1,050,000 FRYS) - Each ICP Hub receives:
-                          43,750 FRYS (1,050,000 FRYS / 24)
-                        </li>
-                        <li>
-                          Community Building and Rewards: 5% (1,050,000 FRYS)
-                        </li>
-                        <li>Liquidity: 15% (3,150,000 FRYS)</li>
->>>>>>> fcb36b2aab64ba73eb81b0af402cb4edfc9b1459
+                        <li>Liquidity: 15% </li>
                       </ul>
                     </li>
                   </ul>
