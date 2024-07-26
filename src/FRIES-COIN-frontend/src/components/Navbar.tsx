@@ -62,10 +62,10 @@ const Navbar: React.FC = () => {
             <div className="bg-gray-300 h-[1px] w-full"></div>
             <Link
               className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/developer-docs"
+              to="/roadmap"
               onClick={() => nav("/developer-docs")}
             >
-              DOCS
+              ROADMAP
             </Link>
           </div>
         </div>

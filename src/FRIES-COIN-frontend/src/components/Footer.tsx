@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa6";
 import iconBg from "../../public/images/logo.png";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
+import oclogo from "../../public/images/oc-logo.svg";
 
 const Footer: React.FC = () => {
   return (
@@ -28,7 +29,7 @@ const Footer: React.FC = () => {
             target="_blank"
           >
             <div className="flex flex-col items-center justify-center p-1">
-              <HiChatAlt2 color="#ffd543" size={44} />
+              <img src={oclogo} alt="oc" className="object-cover" />
               <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
                 OpenChat
               </h1>
