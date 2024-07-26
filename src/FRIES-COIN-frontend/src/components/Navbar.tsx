@@ -58,6 +58,7 @@ const Navbar: React.FC = () => {
             >
               WHITEPAPER
             </Link>
+<<<<<<< HEAD
 
             <div className="bg-gray-300 h-[1px] w-full"></div>
             <Link
@@ -67,6 +68,8 @@ const Navbar: React.FC = () => {
             >
               ROADMAP
             </Link>
+=======
+>>>>>>> 3b950ab304d254d36440671488eb97516233f413
           </div>
         </div>
       </div>

@@ -55,10 +55,10 @@ const Airdrops: React.FC = () => {
               translateZ={60}
               className="text-lg text-gray-300 font-rem"
             >
-              The Air Drop mechanism aims to distribute Fries Coin (FRIES)
+              The Air Drop mechanism aims to distribute Fries Coin (FRYS)
               tokens to a wide audience, encouraging initial adoption, community
               building, and engagement. Total Tokens for Air Drop: 2,100,000
-              FRIES (10% of the total supply).
+              FRYS (10% of the total supply).
             </CardItem>
           </CardBody>
         </CardContainer>
@@ -109,7 +109,7 @@ const Airdrops: React.FC = () => {
             >
               <ul className="list-disc list-inside mt-4 font-rem">
                 <li>
-                  Distribute 50 FRIES to each of the 10,000 whitelisted wallet
+                  Distribute 50 FRYS to each of the 10,000 whitelisted wallet
                   addresses.
                 </li>
                 <li>
@@ -119,12 +119,12 @@ const Airdrops: React.FC = () => {
                 <li>
                   Encourage recipients to share their Air Drop on social media
                   with hashtags like #FriesCoin and #FriesLovers. Reward
-                  participants with an additional 10 FRIES for each verified
+                  participants with an additional 10 FRYS for each verified
                   social media post.
                 </li>
                 <li>
                   Introduce a "Most Creative Post" contest, awarding the top 10
-                  posts with 100 FRIES each.
+                  posts with 100 FRYS each.
                 </li>
               </ul>
             </CardItem>
@@ -142,15 +142,15 @@ const Airdrops: React.FC = () => {
             <CardItem translateZ={60} className="text-lg text-gray-300">
               <ul className="list-disc list-inside mt-4 font-rem">
                 <li>
-                  Launch a referral program where existing FRIES holders can
+                  Launch a referral program where existing FRYS holders can
                   refer friends to sign up for the Air Drop. Both the referrer
-                  and the referee receive 20 FRIES each upon successful
+                  and the referee receive 20 FRYS each upon successful
                   registration and verification.
                 </li>
                 <li>
                   Organize community events such as online quizzes, meme
                   contests, and fries-themed photo competitions. Reward winners
-                  with varying amounts of FRIES (e.g., 100, 200, and 300 FRIES
+                  with varying amounts of FRYS (e.g., 100, 200, and 300 FRYS
                   for top three winners).
                 </li>
                 <li>
@@ -174,9 +174,9 @@ const Airdrops: React.FC = () => {
             <CardItem translateZ={60} className="text-lg text-gray-300">
               <ul className="list-disc list-inside mt-4 font-rem">
                 <li>
-                  Partner with restaurants and food outlets to distribute FRIES
-                  to their customers. Offer a bonus Air Drop of 100 FRIES to
-                  customers who make purchases using FRIES at partnered outlets.
+                  Partner with restaurants and food outlets to distribute FRYS
+                  to their customers. Offer a bonus Air Drop of 100 FRYS to
+                  customers who make purchases using FRYS at partnered outlets.
                 </li>
                 <li>
                   Introduce a "Fries Coin Loyalty Program," offering discounts
@@ -211,8 +211,8 @@ const Airdrops: React.FC = () => {
               <ul className="list-disc list-inside mt-4">
                 <li>
                   Introduce a staking mechanism where users can stake their
-                  FRIES tokens and earn rewards. Allocate a portion of the Air
-                  Drop pool (500,000 FRIES) for staking rewards over six months.
+                  FRYS tokens and earn rewards. Allocate a portion of the Air
+                  Drop pool (500,000 FRYS) for staking rewards over six months.
                 </li>
                 <li>
                   Collect feedback from the community on the Air Drop process.
@@ -242,19 +242,19 @@ const Airdrops: React.FC = () => {
             >
               <ul className="list-disc list-inside mt-4">
                 <li>
-                  Conduct a monthly lucky draw for all FRIES holders, with
-                  prizes ranging from 100 to 1,000 FRIES. Each transaction with
-                  FRIES counts as an entry into the draw, incentivizing usage.
+                  Conduct a monthly lucky draw for all FRYS holders, with
+                  prizes ranging from 100 to 1,000 FRYS. Each transaction with
+                  FRYS counts as an entry into the draw, incentivizing usage.
                 </li>
                 <li>
                   Allocate a portion of the Air Drop pool for charity
                   initiatives. Partner with global food charities to distribute
-                  FRIES to support food security and hunger relief efforts.
+                  FRYS to support food security and hunger relief efforts.
                 </li>
                 <li>
                   Launch educational campaigns to teach users about the Internet
-                  Computer blockchain and how to securely manage their FRIES
-                  tokens. Offer small FRIES rewards for completing educational
+                  Computer blockchain and how to securely manage their FRYS
+                  tokens. Offer small FRYS rewards for completing educational
                   modules and quizzes.
                 </li>
               </ul>

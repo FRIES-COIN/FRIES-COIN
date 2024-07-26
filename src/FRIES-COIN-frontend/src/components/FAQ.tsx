@@ -2,11 +2,11 @@ import { PlaceholdersAndVanishInput } from "../components/ui/placeholders-and-va
 
 export default function FAQ() {
   const placeholders = [
-    "Why should I buy $FRIES?",
+    "Why should I buy $FRYS?",
     "What is a meme coin?",
-    "What is the utility of $FRIES Coin?",
-    "Does $FRIES have any airdrops mechanism?",
-    "Does $FRIES have any unique features?",
+    "What is the utility of $FRYS Coin?",
+    "Does $FRYS have any airdrops mechanism?",
+    "Does $FRYS have any unique features?",
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
