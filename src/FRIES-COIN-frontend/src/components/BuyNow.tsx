@@ -48,7 +48,7 @@ const Buy: React.FC<BuyProps> = ({ handleConnectWallet }) => {
             className="px-4 py-2 rounded-xl bg-[#ffd543] text-black text-xs font-bold"
           >
             <a
-              href="https://app.icpswap.com/swap?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=ezu5v-7qaaa-aaaam-acpbq-cai"
+              href="http://icpex.org/exchange?payToken=ryjl3-tyaaa-aaaaa-aaaba-cai&receiveToken=ezu5v-7qaaa-aaaam-acpbq-cai"
               target="_blank"
             >
               Swap $FRYS
@@ -58,6 +58,6 @@ const Buy: React.FC<BuyProps> = ({ handleConnectWallet }) => {
       </CardBody>
     </CardContainer>
   );
-}
+};
 
 export default Buy;

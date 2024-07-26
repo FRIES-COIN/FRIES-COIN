@@ -67,7 +67,7 @@ function App() {
                 <div className="mx-auto my-0 max-w-[1140px]">
                   <Hero handleConnectWallet={handleConnectWallet} />
                   <About />
-                  <Tokenomics />
+                  {/* <Tokenomics /> */}
                   <Mascot />
                   {/* <Roadmap /> */}
                   <Buy handleConnectWallet={handleConnectWallet} />

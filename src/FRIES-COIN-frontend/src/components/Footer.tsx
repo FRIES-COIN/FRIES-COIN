@@ -29,15 +29,14 @@ const Footer: React.FC = () => {
             target="_blank"
           >
             <div className="flex flex-col items-center justify-center p-1">
-<<<<<<< HEAD
               <img src={oclogo} alt="oc" className="object-cover" />
-=======
+
               <img
                 src="./OC.jpeg"
                 alt="Open Chat logo"
                 className="w-10 h-10 rounded-full"
               />
->>>>>>> 3b950ab304d254d36440671488eb97516233f413
+
               <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
                 OpenChat
               </h1>
