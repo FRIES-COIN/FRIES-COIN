@@ -31,12 +31,6 @@ const Footer: React.FC = () => {
             <div className="flex flex-col items-center justify-center p-1">
               <img src={oclogo} alt="oc" className="object-cover" />
 
-              <img
-                src="./OC.jpeg"
-                alt="Open Chat logo"
-                className="w-10 h-10 rounded-full"
-              />
-
               <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
                 OpenChat
               </h1>
