@@ -46,6 +46,16 @@ function App() {
     return false;
   }
 
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/service-worker.js').then((registration) => {
+        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+      }, (error) => {
+        console.log('ServiceWorker registration failed: ', error);
+      });
+    });
+  }
+
   return (
     <Router>
       <main className="bg-[#041c32] pb-12 md:pb-0">
