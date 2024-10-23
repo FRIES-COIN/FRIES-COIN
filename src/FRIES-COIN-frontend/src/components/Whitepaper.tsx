@@ -164,7 +164,7 @@ const Whitepaper: React.FC = () => {
               className="text-lg text-gray-300 font-rem"
             >
               <strong className="text-[#ffd543] font-rem">Total Supply:</strong>{" "}
-              21,000,000 FRYS
+              210,000,000 FRYS
               <br />
               <br />
               <strong className="text-[#ffd543] font-rem">

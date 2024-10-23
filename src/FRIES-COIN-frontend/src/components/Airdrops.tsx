@@ -58,7 +58,7 @@ const Airdrops: React.FC = () => {
               The Air Drop mechanism aims to distribute Fries Coin (FRYS)
               tokens to a wide audience, encouraging initial adoption, community
               building, and engagement. Total Tokens for Air Drop: 2,100,000
-              FRYS (10% of the total supply).
+              FRYS.
             </CardItem>
           </CardBody>
         </CardContainer>
