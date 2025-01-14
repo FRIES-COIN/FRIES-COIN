@@ -33,12 +33,13 @@ const Hero = ({ handleConnectWallet }: HeroProps) => {
             everywhere.
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
-            <button
+            <a
               className="bg-[#ffd543] text-[#041c32] font-semibold text-lg font-rem md:text-xl hover:text-white py-2 px-4 rounded-lg hover:bg-transparent border-2 border-[#ffd543] transition duration-300"
-              onClick={handleConnectWallet}
+              href="https://app.icpswap.com/swap?input=ryjl3-tyaaa-aaaaa-aaaba-cai&output=ezu5v-7qaaa-aaaam-acpbq-cai"
+              target="_blank"
             >
-              Buy $FRYS{" "}
-            </button>
+              Swap on ICPSWAP{" "}
+            </a>
             <a
               href="https://icpex.org/wallet"
               target="_blank"

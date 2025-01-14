@@ -3,14 +3,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
-import Tokenomics from "./components/Tokenomics";
-import Buy from "./components/BuyNow";
-import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import WalletPopup from "./components/WalletPopup";
 import PurchaseFriesPopup from "./components/PurchaseFries";
 import Blog from "./components/Blog";
-import DeveloperDocs from "./components/DeveloperDocs";
 import Mascot from "./components/ui/Mascot";
 
 function App() {
@@ -43,13 +39,19 @@ function App() {
     return false;
   }
 
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/service-worker.js').then((registration) => {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, (error) => {
-        console.log('ServiceWorker registration failed: ', error);
-      });
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("/service-worker.js").then(
+        (registration) => {
+          console.log(
+            "ServiceWorker registration successful with scope: ",
+            registration.scope
+          );
+        },
+        (error) => {
+          console.log("ServiceWorker registration failed: ", error);
+        }
+      );
     });
   }
 
@@ -77,14 +79,12 @@ function App() {
                   {/* <Tokenomics /> */}
                   <Mascot />
                   {/* <Roadmap /> */}
-                  <Buy handleConnectWallet={handleConnectWallet} />
-                  
+                  {/* <Buy handleConnectWallet={handleConnectWallet} /> */}
                 </div>
               }
             />
-          
+
             <Route path="/blog" element={<Blog />} />
-            
           </Routes>
         </div>
         <Footer />
