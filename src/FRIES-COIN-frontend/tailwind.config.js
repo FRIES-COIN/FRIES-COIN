@@ -1,6 +1,7 @@
 import defaultTheme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+import daisyui from "daisyui";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -14,7 +15,7 @@ export default {
       },
     },
   },
-  plugins: [addVariablesForColors],
+  plugins: [addVariablesForColors, daisyui],
 };
 
 function addVariablesForColors({ addBase, theme }) {

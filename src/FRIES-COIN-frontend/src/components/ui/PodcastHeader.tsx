@@ -12,14 +12,14 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
       <div className="absolute inset-0 bg-gradient-to-t rounded-xl from-[#0C0C0C] to-transparent"></div>
       <div className="absolute backdrop-blur-xl w-full p-2 rounded-b-xl bottom-0">
         <div className="-mb-4 flex items-center justify-between">
-          <h1 className="text-white text-base font-bold font-title">
+          <h1 className="text-white text-base font-rem font-title">
             {podcast.title}
           </h1>
-          <div className="bg-primary px-4 text-white rounded-full h-10 w-10 flex items-center justify-center cursor-pointer hover:bg-red-600 hover:scale-95 transition-all duration-200">
+          <div className="bg-[#f8a504] px-4 text-white rounded-full h-10 w-10 flex items-center justify-center cursor-pointer hover:bg-red-600 hover:scale-95 transition-all duration-200">
             <FaPlay color="black" size={16} />
           </div>
         </div>
-        <div className="w-full justify-between flex items-center bg-gray-200 rounded-full px-2 py-1 mt-8">
+        <div className="w-full justify-between flex items-center bg-transparent rounded-full px-2 py-1 mt-8">
           <div className="flex items-center gap-0">
             <img
               src={podcast.host.image}
@@ -33,18 +33,24 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
             />
           </div>
           <div className="text-xs flex items-center">
-            <h1 className="font-semibold font-body">{podcast.host.name}</h1>
-            <span className="text-primary text-sm mx-1">{"&"}</span>
-            <h1 className="font-semibold font-body">{podcast.guest.name}</h1>
+            <h1 className="font-semibold font-body text-gray-200">
+              {podcast.host.name}
+            </h1>
+            <span className="text-primary text-sm mx-1 text-gray-200">
+              {"&"}
+            </span>
+            <h1 className="font-semibold font-rem text-gray-200">
+              {podcast.guest.name}
+            </h1>
           </div>
         </div>
         <div className="flex items-center justify-between -mt-1">
           <div className="flex items-center ">
-            <p className="text-white text-sm font-bold font-body text-center mt-5 mb-5 ">
+            <p className="text-white text-sm font-bold font-rem text-center mt-5 mb-5 ">
               {podcast.duration.minutes}:{podcast.duration.seconds}
             </p>
             <FaDotCircle className="text-white mx-2" size={10} />
-            <p className="text-primary text-sm font-bold font-body text-center mt-5 mb-5 underline">
+            <p className="text-primary text-sm font-bold font-rem text-center mt-5 mb-5 underline text-white">
               {podcast.series}
             </p>
           </div>
