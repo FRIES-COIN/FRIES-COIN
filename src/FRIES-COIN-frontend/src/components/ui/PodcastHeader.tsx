@@ -50,7 +50,7 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
               {podcast.duration.minutes}:{podcast.duration.seconds}
             </p>
             <FaDotCircle className="text-white mx-2" size={10} />
-            <p className="text-primary text-sm font-bold font-rem text-center mt-5 mb-5 underline text-white">
+            <p className="text-sm font-bold font-rem text-center mt-5 mb-5 underline text-white">
               {podcast.series}
             </p>
           </div>
