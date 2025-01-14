@@ -8,6 +8,7 @@ import WalletPopup from "./components/WalletPopup";
 import PurchaseFriesPopup from "./components/PurchaseFries";
 import Blog from "./components/Blog";
 import Mascot from "./components/ui/Mascot";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -88,6 +89,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        <ToastContainer />
       </main>
     </Router>
   );

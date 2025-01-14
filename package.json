@@ -21,7 +21,8 @@
     "@types/react-syntax-highlighter": "^15.5.13",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.23.1",
-    "react-syntax-highlighter": "^15.5.0"
+    "react-syntax-highlighter": "^15.5.0",
+    "react-toastify": "^11.0.2"
   },
   "devDependencies": {
     "daisyui": "^4.12.23"

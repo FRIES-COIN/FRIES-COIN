@@ -23,13 +23,13 @@ function TeamNews() {
               </p>
             </div>
             <p className="font-rem text-gray-300 font-light text-sm">
-              12 Minutes
+              12 Minutes Ago
             </p>
           </div>
           <h1 className="text-xl font-bold font-rem text-gray-300 mt-4 mb-2 px-2">
             {blogs[0].title}
           </h1>
-          <p className="text-gray-400 font-rem font-normal leading-relaxed md:mb-4 w-[100vw] md:w-2/3 lg:w-3/4 px-2">
+          <p className="text-gray-400 font-rem font-normal leading-relaxed md:mb-4 w-[95vw] md:w-2/3 lg:w-3/4 px-2">
             {blogs[0].content.paragraphOne}...
           </p>
           <div className="flex items-center gap-4 w-full mt-4 md:mt-12 px-2">

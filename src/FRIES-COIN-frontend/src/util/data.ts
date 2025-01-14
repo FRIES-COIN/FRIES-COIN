@@ -65,7 +65,7 @@ interface BlogContent {
   restContent: string;
 }
 
-interface Blog {
+export interface Blog {
   id: string;
   title: string;
   author: Author;
@@ -283,7 +283,69 @@ export const blogs: Blog[] = [
       name: "Tevin",
       career: "Software Developer",
       age: 30,
-      image: f_avatatar1,
+      image: m_avatar1,
+      company: "FRYS",
+      skillSet: ["Typescript", "React", "Rust", "Solidity"],
+    },
+    readTime: {
+      hours: 0,
+      minutes: 4,
+      seconds: 0,
+    },
+    content: {
+      images: [image1, image2, image3],
+      paragraphOne: p1,
+      paragraphTwo: p2,
+      paragraphThree: p3,
+      paragraphFour: p4,
+      restContent: rest,
+    },
+    topics: ["Genesis", "NFT", "GRIT"],
+    likes: 36,
+    reads: 89,
+    series: "The First Mile",
+    publish: 3,
+    banner: storyBanner,
+  },
+  {
+    id: "5",
+    title: "The Fries Coin(FRYS) Story",
+    author: {
+      name: "Tevin",
+      career: "Software Developer",
+      age: 30,
+      image: m_avatar1,
+      company: "FRYS",
+      skillSet: ["Typescript", "React", "Rust", "Solidity"],
+    },
+    readTime: {
+      hours: 0,
+      minutes: 4,
+      seconds: 0,
+    },
+    content: {
+      images: [image1, image2, image3],
+      paragraphOne: p1,
+      paragraphTwo: p2,
+      paragraphThree: p3,
+      paragraphFour: p4,
+      restContent: rest,
+    },
+    topics: ["Genesis", "NFT", "GRIT"],
+    likes: 36,
+    reads: 89,
+    series: "The First Mile",
+    publish: 3,
+    banner: storyBanner,
+  },
+  {
+    id: "6",
+    title: "The Fries Coin(FRYS) Story",
+    author: {
+      name: "Tevin",
+      career: "Software Developer",
+      age: 30,
+      image: m_avatar1,
       company: "FRYS",
       skillSet: ["Typescript", "React", "Rust", "Solidity"],
     },
