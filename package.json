@@ -16,6 +16,7 @@
     "src/FRIES-COIN-frontend"
   ],
   "dependencies": {
+    "@tabler/icons": "^3.28.1",
     "@types/react-syntax-highlighter": "^15.5.13",
     "react-markdown": "^9.0.1",
     "react-router-dom": "^6.23.1",
