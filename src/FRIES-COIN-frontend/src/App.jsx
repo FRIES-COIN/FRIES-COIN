@@ -4,15 +4,12 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Tokenomics from "./components/Tokenomics";
-import Roadmap from "./components/Roadmap";
 import Buy from "./components/BuyNow";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import WalletPopup from "./components/WalletPopup";
 import PurchaseFriesPopup from "./components/PurchaseFries";
-import Whitepaper from "./components/Whitepaper";
-import Airdrops from "./components/Airdrops";
-import Features from "./components/Features";
+import Blog from "./components/Blog";
 import DeveloperDocs from "./components/DeveloperDocs";
 import Mascot from "./components/ui/Mascot";
 
@@ -81,14 +78,13 @@ function App() {
                   <Mascot />
                   {/* <Roadmap /> */}
                   <Buy handleConnectWallet={handleConnectWallet} />
-                  <FAQ />
+                  
                 </div>
               }
             />
-            <Route path="/whitepaper" element={<Whitepaper />} />
-            <Route path="/airdrops" element={<Airdrops />} />
-            <Route path="/features" element={<Features />} />
-            <Route path="/roadmap" element={<Roadmap />} />
+          
+            <Route path="/blog" element={<Blog />} />
+            
           </Routes>
         </div>
         <Footer />

@@ -33,39 +33,13 @@ const Navbar: React.FC = () => {
         </div>
         <div className="flex-col items-center justify-between">
           <div className=" w-full text-gray-600 flex flex-col items-center justify-center gap-12 ">
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/airdrops"
-              onClick={() => nav("/airdrops")}
-            >
-              AIRDROPS
-            </Link>
-
             <div className="bg-gray-300 h-[1px] w-full"></div>
             <Link
               className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
               to="/features"
-              onClick={() => nav("/features")}
+              onClick={() => nav("/BLOG")}
             >
-              FEATURES
-            </Link>
-
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/whitepaper"
-              onClick={() => nav("/whitepaper")}
-            >
-              WHITEPAPER
-            </Link>
-
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/roadmap"
-              onClick={() => nav("/developer-docs")}
-            >
-              ROADMAP
+              BLOG
             </Link>
           </div>
         </div>
@@ -86,27 +60,15 @@ const Navbar: React.FC = () => {
           <div className="hidden w-full text-gray-600 md:flex md:items-center">
             <Link
               className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/airdrops"
+              to="/"
             >
-              AirDrops
+              HOME
             </Link>
             <Link
               className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/features"
+              to="/blog"
             >
-              Features
-            </Link>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/whitepaper"
-            >
-              Whitepaper
-            </Link>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/roadmap"
-            >
-              Roadmap
+              BLOG
             </Link>
           </div>
         </div>
