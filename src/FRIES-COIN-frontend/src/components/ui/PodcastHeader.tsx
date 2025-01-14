@@ -36,9 +36,7 @@ function PodcastCard({ podcast }: { podcast: Podcast }) {
             <h1 className="font-semibold font-body text-gray-200">
               {podcast.host.name}
             </h1>
-            <span className="text-primary text-sm mx-1 text-gray-200">
-              {"&"}
-            </span>
+            <span className="text-sm mx-1 text-gray-200">{"&"}</span>
             <h1 className="font-semibold font-rem text-gray-200">
               {podcast.guest.name}
             </h1>

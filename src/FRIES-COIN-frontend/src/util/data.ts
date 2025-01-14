@@ -13,8 +13,16 @@ import {
   m_avatar2,
   podcast1,
   podcast2,
-  podcast3,
   podcast4,
+  storyBanner,
+  image1,
+  image2,
+  image3,
+  p1,
+  p2,
+  p3,
+  p4,
+  rest,
 } from "./index";
 
 interface Host {
@@ -48,12 +56,21 @@ interface Time {
 
 interface Author extends Guest {}
 
+interface BlogContent {
+  images: string[];
+  paragraphOne: string;
+  paragraphTwo: string;
+  paragraphThree: string;
+  paragraphFour: string;
+  restContent: string;
+}
+
 interface Blog {
   id: string;
   title: string;
   author: Author;
   readTime: Time;
-  content: string;
+  content: BlogContent;
   topics: string[];
   likes: number;
   reads: number;
@@ -187,101 +204,108 @@ export const podcasts: Podcast[] = [
 ];
 
 export const blogs: Blog[] = [
-  {
-    id: "1",
-    title: "The Art of Showing Up, For Developers",
-    author: {
-      name: "Adrian Msubi",
-      career: "Software Developer & Fitness Enthusiat",
-      age: 30,
-      image: f_avatatar1,
-      company: "Guilx",
-      skillSet: ["Typescript", "React", "Rust", "Solidity"],
-    },
-    readTime: {
-      hours: 0,
-      minutes: 7,
-      seconds: 0,
-    },
-    content: "",
-    topics: ["Well-Being", "Motivational", "Software Engineering"],
-    likes: 366,
-    reads: 1089,
-    series: "The First Mile",
-    publish: 1,
-    banner: "",
-  },
-  {
-    id: "2",
-    title: "Why Digital Art will be the Gold of Cyber World",
-    author: {
-      name: "0xsylus Abel",
-      career: "Software Developer",
-      age: 22,
-      image: m_avatar1,
-      company: "FRYS",
-      skillSet: ["Typescript", "React", "GO", "Solidity"],
-    },
-    readTime: {
-      hours: 0,
-      minutes: 8,
-      seconds: 0,
-    },
-    content: "",
-    topics: ["NFTs", "Future Tech", "Software Engineering", "Engineering"],
-    likes: 66,
-    reads: 108,
-    series: "On the Block",
-    publish: 1,
-    banner: "",
-  },
-  {
-    id: "3",
-    title: "How I landed my first Web3 Job",
-    author: {
-      name: "Mercy King",
-      career: "Frontend Developer",
-      age: 30,
-      image: f_avatar2,
-      company: "ENS",
-      skillSet: ["Typescript", "React", "Swift", "Java"],
-    },
-    readTime: {
-      hours: 0,
-      minutes: 12,
-      seconds: 0,
-    },
-    content: "",
-    topics: ["Jobs", "Software Engineering"],
-    likes: 3066,
-    reads: 10892,
-    series: "The First Mile",
-    publish: 2,
-    banner: "",
-  },
+  //   {
+  //     id: "1",
+  //     title: "The Art of Showing Up, For Developers",
+  //     author: {
+  //       name: "Adrian Msubi",
+  //       career: "Software Developer & Fitness Enthusiat",
+  //       age: 30,
+  //       image: f_avatatar1,
+  //       company: "Guilx",
+  //       skillSet: ["Typescript", "React", "Rust", "Solidity"],
+  //     },
+  //     readTime: {
+  //       hours: 0,
+  //       minutes: 7,
+  //       seconds: 0,
+  //     },
+  //     content: "",
+  //     topics: ["Well-Being", "Motivational", "Software Engineering"],
+  //     likes: 366,
+  //     reads: 1089,
+  //     series: "The First Mile",
+  //     publish: 1,
+  //     banner: "",
+  //   },
+  //   {
+  //     id: "2",
+  //     title: "Why Digital Art will be the Gold of Cyber World",
+  //     author: {
+  //       name: "0xsylus Abel",
+  //       career: "Software Developer",
+  //       age: 22,
+  //       image: m_avatar1,
+  //       company: "FRYS",
+  //       skillSet: ["Typescript", "React", "GO", "Solidity"],
+  //     },
+  //     readTime: {
+  //       hours: 0,
+  //       minutes: 8,
+  //       seconds: 0,
+  //     },
+  //     content: "",
+  //     topics: ["NFTs", "Future Tech", "Software Engineering", "Engineering"],
+  //     likes: 66,
+  //     reads: 108,
+  //     series: "On the Block",
+  //     publish: 1,
+  //     banner: "",
+  //   },
+  //   {
+  //     id: "3",
+  //     title: "How I landed my first Web3 Job",
+  //     author: {
+  //       name: "Mercy King",
+  //       career: "Frontend Developer",
+  //       age: 30,
+  //       image: f_avatar2,
+  //       company: "ENS",
+  //       skillSet: ["Typescript", "React", "Swift", "Java"],
+  //     },
+  //     readTime: {
+  //       hours: 0,
+  //       minutes: 12,
+  //       seconds: 0,
+  //     },
+  //     content: "",
+  //     topics: ["Jobs", "Software Engineering"],
+  //     likes: 3066,
+  //     reads: 10892,
+  //     series: "The First Mile",
+  //     publish: 2,
+  //     banner: "",
+  //   },
   {
     id: "4",
-    title: "Run Now, Complain Later, My Life Moto",
+    title: "The Fries Coin(FRYS) Story",
     author: {
-      name: "John Frie",
+      name: "Tevin",
       career: "Software Developer",
       age: 30,
       image: f_avatatar1,
-      company: "Synthetix",
+      company: "FRYS",
       skillSet: ["Typescript", "React", "Rust", "Solidity"],
     },
     readTime: {
       hours: 0,
-      minutes: 5,
+      minutes: 4,
       seconds: 0,
     },
-    content: "",
-    topics: ["Well-Being", "Motivational", "GRIT"],
+    content: {
+      images: [image1, image2, image3],
+      paragraphOne: p1,
+      paragraphTwo: p2,
+      paragraphThree: p3,
+      paragraphFour: p4,
+      restContent: rest,
+    },
+    topics: ["Genesis", "NFT", "GRIT"],
     likes: 36,
     reads: 89,
     series: "The First Mile",
     publish: 3,
-    banner: "",
+    banner: storyBanner,
   },
 ];
 
