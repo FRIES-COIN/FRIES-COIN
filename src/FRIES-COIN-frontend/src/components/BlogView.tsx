@@ -8,7 +8,7 @@ function BlogView() {
   const blog: Blog | undefined = blogs.find((blog) => blog.id === id);
 
   return (
-    <div className="max-w-[900px] mx-auto my-0 min-h-screen pt-20">
+    <div className="max-w-[900px] mx-auto my-0 min-h-screen pt-20 mb-12">
       {blog === undefined ? (
         <p className="font-rem font-bold text-xl text-center">
           Oops! Something went wong

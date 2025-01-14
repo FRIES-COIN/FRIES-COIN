@@ -1,9 +1,15 @@
 import { FaDotCircle, FaPlay } from "react-icons/fa";
 import { Podcast, podcasts } from "../../util/data";
+import { toast } from "react-toastify";
 
 function PodcastCard({ podcast }: { podcast: Podcast }) {
   return (
-    <div className="relative h-[400px] w-[330px] md:w-[330px] lg:w-[350px] rounded-xl hover:opacity-90 transition-all ease-in duration-300">
+    <div
+      className="relative h-[400px] w-[330px] md:w-[330px] lg:w-[350px] rounded-xl hover:opacity-90 transition-all ease-in duration-300"
+      onClick={() => {
+        toast.success("To be released soon!!☺️");
+      }}
+    >
       <img
         src={podcast.bannerImage}
         alt={podcast.title}

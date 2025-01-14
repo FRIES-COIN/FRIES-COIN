@@ -1,14 +1,19 @@
+import { useNavigate } from "react-router-dom";
 import banner from "../../../public/collection5.png";
 import { m_avatar1 } from "../../util";
 import { blogs } from "../../util/data";
 
 function TeamNews() {
+  const navigation = useNavigate();
   return (
     <div className="mt-12 mx-0 md:mx-2">
       <h1 className="text-2xl font-rem font-semibold my-4 text-gray-300 mx-2">
         From the FRYS Team
       </h1>
-      <div className="flex flex-col items-start md:flex-row gap-2 md:gap-4 mt-4">
+      <div
+        className="flex flex-col items-start md:flex-row gap-2 md:gap-4 mt-4"
+        onClick={() => navigation(`/blogs/${blogs[0].id}`)}
+      >
         <img
           src={blogs[0].banner}
           className="object-contain md:object-cover rounded-xl w-[100vw] h-auto md:w-[450px] md:h-[350px]"
