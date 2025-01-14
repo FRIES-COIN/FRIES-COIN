@@ -9,6 +9,7 @@ import PurchaseFriesPopup from "./components/PurchaseFries";
 import Blog from "./components/Blog";
 import Mascot from "./components/ui/Mascot";
 import { ToastContainer } from "react-toastify";
+import BlogView from "./components/BlogView";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -86,6 +87,7 @@ function App() {
             />
 
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blogs/:id" element={<BlogView />} />
           </Routes>
         </div>
         <Footer />

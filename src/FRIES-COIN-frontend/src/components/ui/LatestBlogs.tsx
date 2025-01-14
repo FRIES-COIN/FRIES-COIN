@@ -1,11 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { blogs, Blog } from "../../util/data";
 import { toast } from "react-toastify";
 
 function LatestBlog({ blog }: { blog: Blog }) {
+  const navigation = useNavigate();
   return (
-    <div className="flex flex-col hover:scale-95 ease-in duration-200 cursor-pointer md:mx-1 w-[95vw] md:w-[350px] my-2">
+    <div
+      className="flex flex-col hover:scale-95 ease-in duration-200 cursor-pointer md:mx-1 w-[95vw] md:w-[350px] my-2"
+      onClick={() => navigation(`/blogs/${blog.id}`)}
+    >
       <img
         src={blog.banner}
         alt={blog.title}
