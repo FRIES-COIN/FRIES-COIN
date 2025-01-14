@@ -4,10 +4,7 @@ import {
   IconCameraBitcoin,
   IconProps,
   Icon,
-} from "@tabler/icons";
-
-import { FaRunning, FaCamera } from "react-icons/fa";
-import { RiArtboard2Fill } from "react-icons/ri";
+} from "@tabler/icons-react";
 
 import {
   f_avatar2,
