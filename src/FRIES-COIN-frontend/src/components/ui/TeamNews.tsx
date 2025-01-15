@@ -39,7 +39,7 @@ function TeamNews() {
           </p>
           <div className="flex items-center gap-4 w-full mt-4 md:mt-12 px-2">
             <div className="flex items-center">
-              <img src={m_avatar1} className="w-14 h-14 rounded-full p-1" />
+              <img src={m_avatar1} className="w-12 h-12 rounded-full p-1" />
               <p className="font-rem font-light text-sm text-gray-400">
                 {blogs[0].author.name}
               </p>

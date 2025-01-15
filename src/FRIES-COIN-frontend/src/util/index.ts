@@ -3,9 +3,9 @@ import podcast2 from "../../public/podcast4.png";
 import podcast3 from "../../public/podcast3.avif";
 import podcast4 from "../../public/podcast3.jpeg";
 import storyBanner from "../../public/collection5.png";
-import image1 from "../../public/buy.jpeg";
-import image2 from "../../public/icp.png";
-import image3 from "../../public/postlaunch.jpg";
+import image1 from "../../public/img2.png";
+import image2 from "../../public/img1.png";
+import image3 from "../../public/img3.png";
 
 const p1 = `Fries Coin(FRYS) is a revolutionary meme coin dedicated to fry lovers and enthusiasts across the globe. This meme coin was developed with the mission of becoming the newest and most captivating digital currency users can rely on to purchase fries and other related products at various restaurants and food outlets.`;
 const p2 =

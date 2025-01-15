@@ -14,7 +14,7 @@ function BlogView() {
           Oops! Something went wong
         </p>
       ) : (
-        <div className="flex flex-col gap-2 mx-2">
+        <div className="flex flex-col gap-2 mx-2 px-2">
           <h1 className="text-gray-300 font-rem font-bold text-xl leading-relaxed">
             {blog.title}
           </h1>
@@ -31,7 +31,7 @@ function BlogView() {
           <img
             src={blog.content.images[0]}
             alt={blog.title}
-            className="w-full h-64 md:h-72 object-cover rounded-lg my-2"
+            className="w-full h-64 md:h-72 object-center rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphTwo}
@@ -39,7 +39,7 @@ function BlogView() {
           <img
             src={blog.content.images[1]}
             alt={blog.title}
-            className="w-full h-64 md:h-72 object-cover rounded-lg my-2"
+            className="w-full h-64 md:h-72 object-fill rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphThree}
@@ -47,7 +47,7 @@ function BlogView() {
           <img
             src={blog.content.images[2]}
             alt={blog.title}
-            className="w-full h-64 md:h-72 object-cover rounded-lg my-2"
+            className="w-full h-64 md:h-96 object-center rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphFour}
