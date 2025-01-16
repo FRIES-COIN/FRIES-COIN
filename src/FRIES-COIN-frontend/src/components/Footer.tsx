@@ -9,7 +9,7 @@ import oclogo from "../../public/images/oc-logo.svg";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="relative h-80 flex items-center justify-center bg-cover bg-center text-center text-white px-4">
+    <footer className="relative font-rem h-80 flex items-center justify-center bg-cover bg-center text-center text-white px-4">
       {/* Pseudo-element for the background image */}
       <div
         className="absolute inset-0 bg-repeat bg-center bg-contain opacity-30"
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
       ></div>
       {/* Content of the footer */}
       <div className="relative z-10">
-        <h2 className="text-3xl font-bold sm:text-5xl text-gray-300">
+        <h2 className="text-3xl font-bold sm:text-5xl text-gray-300 font-rem">
           Join Our Socials
         </h2>
         <div className="flex items-center gap-4 w-full justify-center">
@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
             target="_blank"
           >
             <div className="flex flex-col items-center justify-center p-1">
-              <img src={oclogo} alt="oc" className="object-cover" />
+              <img src={oclogo} alt="oc" className="object-cover h-10 w-10" />
 
               <h1 className="md:font-bold text-sm md:text-lg text-gray-300">
                 OpenChat
