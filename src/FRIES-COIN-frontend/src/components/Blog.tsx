@@ -10,10 +10,10 @@ function Blog() {
       <Navbar />
       <BlogHeader />
       <section className="max-w-[1140px] my-0 mx-auto">
-        <h1 className="text-xl font-bold font-rem text-gray-300 mt-8 mb-1 mx-2">
+        {/* <h1 className="text-xl font-bold font-rem text-gray-300 mt-8 mb-1 mx-2">
           This Week Episodes
         </h1>
-        <PodacastHeader />
+        <PodacastHeader /> */}
         <TeamNews />
         <LatestBlogs />
       </section>

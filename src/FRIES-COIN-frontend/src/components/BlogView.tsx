@@ -4,7 +4,6 @@ import { Blog, blogs } from "../util/data";
 
 function BlogView() {
   const { id } = useParams();
-  console.log(id);
   const blog: Blog | undefined = blogs.find((blog) => blog.id === id);
 
   return (
