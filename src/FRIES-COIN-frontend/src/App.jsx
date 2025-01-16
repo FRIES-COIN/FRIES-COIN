@@ -10,6 +10,7 @@ import Blog from "./components/Blog";
 import Mascot from "./components/ui/Mascot";
 import { ToastContainer } from "react-toastify";
 import BlogView from "./components/BlogView";
+import AllBlogs from "./components/AllBlogs";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -88,6 +89,7 @@ function App() {
 
             <Route path="/blog" element={<Blog />} />
             <Route path="/blogs/:id" element={<BlogView />} />
+            <Route path="/all" element={<AllBlogs />} />
           </Routes>
         </div>
         <Footer />
