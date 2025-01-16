@@ -30,7 +30,7 @@ function BlogView() {
           <img
             src={blog.content.images[0]}
             alt={blog.title}
-            className="w-full h-64 md:h-72 object-center rounded-lg my-2"
+            className="w-full h-64 md:h-72 object-contain rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphTwo}
@@ -38,7 +38,7 @@ function BlogView() {
           <img
             src={blog.content.images[1]}
             alt={blog.title}
-            className="w-full h-64 md:h-72 object-fill rounded-lg my-2"
+            className="w-full h-64 md:h-72 object-contain rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphThree}
@@ -46,7 +46,7 @@ function BlogView() {
           <img
             src={blog.content.images[2]}
             alt={blog.title}
-            className="w-full h-64 md:h-96 object-center rounded-lg my-2"
+            className="w-full h-64 md:h-96 object-contain rounded-lg my-2"
           />
           <p className="text-gray-300 font-rem font-normal text-base leading-relaxed">
             {blog.content.paragraphFour}
