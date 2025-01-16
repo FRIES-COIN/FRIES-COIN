@@ -15,7 +15,7 @@ function Blog() {
         </h1>
         <PodacastHeader /> */}
         <TeamNews />
-        <LatestBlogs />
+        {/* <LatestBlogs /> */}
       </section>
     </div>
   );

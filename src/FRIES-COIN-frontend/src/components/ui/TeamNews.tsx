@@ -7,11 +7,11 @@ function TeamNews() {
   const navigation = useNavigate();
   return (
     <div className="mt-12 mx-0 md:mx-2">
-      <h1 className="text-2xl font-rem font-semibold my-4 text-gray-300 mx-2">
+      {/* <h1 className="text-2xl font-rem font-semibold my-4 text-gray-300 mx-2">
         From the FRYS Team
-      </h1>
+      </h1> */}
       <div
-        className="flex flex-col items-start md:flex-row gap-2 md:gap-4 mt-4"
+        className="flex flex-col items-start md:flex-row gap-2 md:gap-4 mt-4 cursor-pointer hover:scale-95 ease-in duration-200"
         onClick={() => navigation(`/blogs/${blogs[0].id}`)}
       >
         <img
@@ -21,15 +21,15 @@ function TeamNews() {
         />
         <div className="flex flex-col gap-2">
           <div className="flex items-center gap-4 w-full">
-            <div className="flex items-center">
+            {/* <div className="flex items-center">
               <img src="/logo.png" className="w-8 h-8 rounded-full" />
               <p className="font-rem font-light text-sm text-gray-300 uppercase">
                 {blogs[0].author.company}
               </p>
-            </div>
-            <p className="font-rem text-gray-300 font-light text-sm">
+            </div> */}
+            {/* <p className="font-rem text-gray-300 font-light text-sm">
               12 Minutes Ago
-            </p>
+            </p> */}
           </div>
           <h1 className="text-xl font-bold font-rem text-gray-300 mt-4 mb-2 px-2">
             {blogs[0].title}
