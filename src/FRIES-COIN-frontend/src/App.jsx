@@ -11,6 +11,7 @@ import Mascot from "./components/ui/Mascot";
 import { ToastContainer } from "react-toastify";
 import BlogView from "./components/BlogView";
 import AllBlogs from "./components/AllBlogs";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -90,6 +91,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blogs/:id" element={<BlogView />} />
             <Route path="/all" element={<AllBlogs />} />
+            <Route path="*" element={<ErrorPage />} />
           </Routes>
         </div>
         <Footer />
