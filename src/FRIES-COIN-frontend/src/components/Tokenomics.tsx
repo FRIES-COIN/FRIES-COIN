@@ -10,11 +10,11 @@ import {
 import sauceImage from "../../public/sauce.png";
 
 const data = [
-  { name: "Early Contributors and Team"},
+  { name: "Early Contributors and Team" },
   { name: "ICP Hubs" },
   { name: "Community Building and Rewards" },
-  { name: "Liquidity"},
-  { name: "Available for Mining"},
+  { name: "Liquidity" },
+  { name: "Available for Mining" },
 ];
 
 const COLORS = ["#FFBB28", "#FF8042", "#00C49F"];
@@ -58,8 +58,8 @@ const Tokenomics: React.FC = () => {
         </h2>
         <div className="mt-10">
           <p className="mt-4 text-2xl text-[#ffd543] font-extrabold text-center font-rem">
-            <strong className="text-white">Total Supply:</strong> 210 million tokens
-            $FRYS
+            <strong className="text-white">Total Supply:</strong> 210 million
+            tokens $FRYS
           </p>
         </div>
         <div className="mt-10">
@@ -67,7 +67,7 @@ const Tokenomics: React.FC = () => {
             Initial Distribution
           </h3>
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="w-full md:w-1/2">
+            {/* <div className="w-full md:w-1/2">
               <ResponsiveContainer width="100%" height={400}>
                 <PieChart>
                   <Pie
@@ -91,12 +91,12 @@ const Tokenomics: React.FC = () => {
                   <Legend />
                 </PieChart>
               </ResponsiveContainer>
-            </div>
+            </div> */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-8">
               <h4 className="text-xl font-semibold text-gray-300 font-rem">
                 Distribution and Issuance Schedule:
               </h4>
-              <ul className="mt-2 text-lg text-gray-100 py-4 list-disc list-inside font-rem">
+              <ul className="mt-2 text-lg text-gray-100 py-4 font-rem">
                 <li className="leading-relaxed">
                   <strong className="text-[#ffd543]">
                     PoUW Consensus Mechanism:
@@ -109,30 +109,22 @@ const Tokenomics: React.FC = () => {
                     Initial Distribution:
                   </strong>
                   <ul className="list-inside list-disc font-rem">
-                    <li>
+                    <div>
                       <span>Genesis Block:</span>
-                      <ul className="list-inside list-item pl-4">
-                        <li>
-                          Early Contributors and Team: 5% 
-                        </li>
-                        
-                       
-                        <li>
-                          ICP Hubs: 5% 
-                        </li>
-                        <li>
-                          Community Building and Rewards: 5% 
-                        </li>
-                        <li>Liquidity: 15% </li>
+                      <ul className="pl-4 list-inside list-disc">
+                        <li>Early Contributors and Team: 5%</li>
+                        <li>ICP Hubs: 5%</li>
+                        <li>Community Building and Rewards: 5%</li>
+                        <li>Liquidity: 15%</li>
                       </ul>
-                    </li>
+                    </div>
                   </ul>
                 </li>
-                <li>
+                {/* <li>
                   <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
                   Participants contribute computational resources to the network
                   and are rewarded with FRYS tokens.
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

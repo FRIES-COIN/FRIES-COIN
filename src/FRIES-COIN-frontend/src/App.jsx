@@ -12,6 +12,7 @@ import { ToastContainer } from "react-toastify";
 import BlogView from "./components/BlogView";
 import AllBlogs from "./components/AllBlogs";
 import ErrorPage from "./components/ErrorPage";
+import Tokenomics from "./components/Tokenomics";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -80,7 +81,7 @@ function App() {
                 <div className="mx-auto my-0 max-w-[1140px]">
                   <Hero handleConnectWallet={handleConnectWallet} />
                   <About />
-                  {/* <Tokenomics /> */}
+                  <Tokenomics />
                   <Mascot />
                   {/* <Roadmap /> */}
                   {/* <Buy handleConnectWallet={handleConnectWallet} /> */}
