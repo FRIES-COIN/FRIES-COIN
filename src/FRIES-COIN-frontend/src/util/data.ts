@@ -280,7 +280,7 @@ export const blogs: Blog[] = [
     id: "4",
     title: "The Fries Coin(FRYS) Story",
     author: {
-      name: "Tevin",
+      name: "FRYST",
       career: "Software Developer",
       age: 30,
       image: m_avatar1,
