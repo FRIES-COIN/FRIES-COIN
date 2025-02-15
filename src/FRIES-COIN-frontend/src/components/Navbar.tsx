@@ -32,26 +32,43 @@ const Navbar: React.FC = () => {
           <IoMdClose color="#ffd543" size={44} onClick={() => setMenu(!menu)} />
         </div>
         <div className="flex-col items-center justify-between">
-          <div className=" w-full text-gray-600 flex flex-col items-center justify-center gap-12 ">
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/"
-              onClick={() => nav("/")}
-            >
-              HOME
-            </Link>
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/blog"
-              onClick={() => nav("/BLOG")}
-            >
-              BLOG
-            </Link>
-            <div className="bg-gray-300 h-[1px] w-full"></div>
-          </div>
+        <div className="w-full text-gray-600 flex flex-col items-center justify-center gap-12">
+          <div className="bg-gray-300 h-[1px] w-full"></div>
+          <Link
+            className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/"
+            onClick={() => nav("/")}
+          >
+            HOME
+          </Link>
+          <div className="bg-gray-300 h-[1px] w-full"></div>
+          <Link
+            className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/blog"
+            onClick={() => nav("/blog")}
+          >
+            BLOG
+          </Link>
+          <div className="bg-gray-300 h-[1px] w-full"></div>
+          <Link
+            className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/whitepaper"
+            onClick={() => nav("/whitepaper")}
+          >
+            WHITEPAPER
+          </Link>
+          <div className="bg-gray-300 h-[1px] w-full"></div>
+          <a
+            className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            href="https://frysnft.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FRYS NFT
+          </a>
+          <div className="bg-gray-300 h-[1px] w-full"></div>
         </div>
+      </div>
       </div>
       <div className="container mx-auto px-6 py-3 flex justify-between items-center">
         <div className="w-full text-gray-700 md:text-center text-2xl font-semibold flex items-center gap-2 cursor-pointer">
@@ -66,20 +83,34 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="flex items-center justify-between">
-          <div className="hidden w-full text-gray-600 md:flex md:items-center">
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/"
-            >
-              HOME
-            </Link>
-            <Link
-              className="mx-4 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
-              to="/blog"
-            >
-              BLOG
-            </Link>
-          </div>
+        <div className="hidden w-full text-gray-600 md:flex md:items-center md:justify-center md:gap-8">
+          <Link
+            className="mx-6 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/"
+          >
+            HOME
+          </Link>
+          <Link
+            className="mx-6 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/blog"
+          >
+            BLOG
+          </Link>
+          <Link
+            className="mx-6 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            to="/whitepaper"
+          >
+            WHITEPAPER
+          </Link>
+          <a
+            className="mx-6 text-gray-300 font-rem font-semibold hover:text-[#ffd543] ease-in duration-150 cursor-pointer"
+            href="https://frysnft.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            NFT
+          </a>
+        </div>
         </div>
 
         <div className="flex items-center gap-2 w-full justify-end">

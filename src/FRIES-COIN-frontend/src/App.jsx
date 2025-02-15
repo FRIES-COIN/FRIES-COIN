@@ -13,6 +13,7 @@ import BlogView from "./components/BlogView";
 import AllBlogs from "./components/AllBlogs";
 import ErrorPage from "./components/ErrorPage";
 import Tokenomics from "./components/Tokenomics";
+import Whitepaper from "./components/Whitepaper";
 
 function App() {
   const [greeting, setGreeting] = useState("");
@@ -93,6 +94,7 @@ function App() {
             <Route path="/blogs/:id" element={<BlogView />} />
             <Route path="/all" element={<AllBlogs />} />
             <Route path="*" element={<ErrorPage />} />
+            <Route path="/whitepaper" element={<Whitepaper />} />
           </Routes>
         </div>
         <Footer />

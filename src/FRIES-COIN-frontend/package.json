@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "setup": "npm i && dfx canister create FRIES-COIN-backend && dfx generate FRIES-COIN-backend && dfx deploy",
-    "start": "vite --port 3000",
+    "start": "vite --port 3005",
     "prebuild": "dfx generate",
     "build": "tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\""
@@ -17,8 +17,10 @@
     "@dfinity/principal": "^1.3.0",
     "@react-spring/web": "^9.7.3",
     "@tabler/icons": "^3.28.1",
+    "@tabler/icons-react": "^3.28.1",
     "clsx": "^2.1.1",
     "d3-ease": "^3.0.1",
+    "daisyui": "^4.12.23",
     "framer-motion": "^11.2.6",
     "FRIES-COIN-frontend": "file:",
     "react": "^18.2.0",
@@ -26,6 +28,7 @@
     "react-icons": "^5.2.1",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.23.1",
+    "react-toastify": "^11.0.3",
     "recharts": "^2.12.7",
     "tailwind-merge": "^2.3.0"
   },
