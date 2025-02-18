@@ -186,18 +186,61 @@ const Whitepaper: React.FC = () => {
                     Initial Distribution:
                   </strong>{" "}
                   Genesis Block: Initial distribution of FRYS:
-                  <ul className="list-disc list-inside mt-4 ml-8">
-                    <li>
-                      Early Contributors and Team: 5% 
+                  <ul className="mt-2 text-lg text-gray-100 py-4 font-rem space-y-4 w-full">
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Early Contributors and Team (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reward for the core team and early supporters who helped build the project.
+                      </i>
                     </li>
-                    <li>
-                    ICP Hubs: 5% 
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">ICP Hubs (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Allocated to ICP Hubs to foster blockchain adoption and developer engagement.
+                      </i>
                     </li>
-                    
-                    <li>
-                      Community Building and Rewards: 5% 
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Community Building & Rewards (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Used for giveaways, ambassador programs, and marketing campaigns.
+                      </i>
                     </li>
-                    <li> Liquidity: 15%</li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Liquidity (15%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Ensures smooth trading and reduces volatility. Locked forever.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Ecosystem Growth & Development (20%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Funds to support developers, integrations, partnerships, and grants for dApp builders.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Staking Rewards (20%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Incentivizes long-term holding by allowing users to stake Fry's Coin for passive rewards.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Treasury & Future Developments (10%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reserved for unforeseen opportunities, partnerships, and further development of the ecosystem.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Public Sale (IDO/ICO) (15%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Allocated for early investors and public buyers to ensure fair distribution.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Advisors & Strategic Partnerships (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reserved for key industry experts who provide strategic guidance.
+                      </i>
+                    </li>
                   </ul>
                 </li>
                 <li>

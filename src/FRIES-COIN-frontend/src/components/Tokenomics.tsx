@@ -10,11 +10,15 @@ import {
 import sauceImage from "../../public/sauce.png";
 
 const data = [
-  { name: "Early Contributors and Team" },
-  { name: "ICP Hubs" },
-  { name: "Community Building and Rewards" },
-  { name: "Liquidity" },
-  { name: "Available for Mining" },
+  { name: "Early Contributors and Team", value: 5 },
+  { name: "ICP Hubs", value: 5 },
+  { name: "Community Building & Rewards", value: 5 },
+  { name: "Liquidity", value: 15 },
+  { name: "Ecosystem Growth & Development", value: 20 },
+  { name: "Staking Rewards", value: 20 },
+  { name: "Treasury & Future Developments", value: 10 },
+  { name: "Public Sale (IDO/ICO)", value: 15 },
+  { name: "Advisors & Strategic Partnerships", value: 5 }
 ];
 
 const COLORS = ["#FFBB28", "#FF8042", "#00C49F"];
@@ -67,31 +71,6 @@ const Tokenomics: React.FC = () => {
             Initial Distribution
           </h3>
           <div className="flex flex-col md:flex-row items-center justify-between">
-            {/* <div className="w-full md:w-1/2">
-              <ResponsiveContainer width="100%" height={400}>
-                <PieChart>
-                  <Pie
-                    data={data}
-                    cx="50%"
-                    cy="50%"
-                    label={renderCustomizedLabel}
-                    labelLine={false}
-                    outerRadius={150}
-                    fill="#8884d8"
-                    dataKey="value"
-                  >
-                    {data.map((entry, index) => (
-                      <Cell
-                        key={`cell-${index}`}
-                        fill={COLORS[index % COLORS.length]}
-                      />
-                    ))}
-                  </Pie>
-                  <Tooltip />
-                  <Legend />
-                </PieChart>
-              </ResponsiveContainer>
-            </div> */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0 md:pl-8">
               <h4 className="text-xl font-semibold text-gray-300 font-rem">
                 Distribution and Issuance Schedule:
@@ -108,24 +87,73 @@ const Tokenomics: React.FC = () => {
                   <strong className="text-[#ffd543]">
                     Initial Distribution:
                   </strong>
-                  <ul className="list-inside list-disc font-rem">
-                    <div>
-                      <span>Genesis Block:</span>
-                      <ul className="pl-4 list-inside list-disc">
-                        <li>Early Contributors and Team: 5%</li>
-                        <li>ICP Hubs: 5%</li>
-                        <li>Community Building and Rewards: 5%</li>
-                        <li>Liquidity: 15%</li>
-                      </ul>
-                    </div>
+                  <ul className="mt-2 text-lg text-gray-100 py-4 font-rem space-y-4 w-full">
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Early Contributors and Team (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reward for the core team and early supporters who helped build the project.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">ICP Hubs (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Allocated to ICP Hubs to foster blockchain adoption and developer engagement.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Community Building & Rewards (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Used for giveaways, ambassador programs, and marketing campaigns.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Liquidity (15%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Ensures smooth trading and reduces volatility. Locked forever.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Ecosystem Growth & Development (20%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Funds to support developers, integrations, partnerships, and grants for dApp builders.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Staking Rewards (20%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Incentivizes long-term holding by allowing users to stake Fry's Coin for passive rewards.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Treasury & Future Developments (10%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reserved for unforeseen opportunities, partnerships, and further development of the ecosystem.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Public Sale (IDO/ICO) (15%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Allocated for early investors and public buyers to ensure fair distribution.
+                      </i>
+                    </li>
+                    <li className="leading-relaxed">
+                      <b className="text-[#ffd543] text-xl">Advisors & Strategic Partnerships (5%)</b>
+                      <i className="block ml-4 text-gray-300">
+                        Reserved for key industry experts who provide strategic guidance.
+                      </i>
+                    </li>
                   </ul>
                 </li>
-                {/* <li>
-                  <strong className="text-[#ffd543]">Mining Rewards:</strong>{" "}
-                  Participants contribute computational resources to the network
-                  and are rewarded with FRYS tokens.
-                </li> */}
               </ul>
+              <div className="mt-6">
+                <h4 className="text-xl font-semibold text-[#ffd543] font-rem">Key Benefits:</h4>
+                <ul className="mt-2 text-gray-100 list-inside list-disc">
+                  <li>Sustainability through Treasury allocation</li>
+                  <li>Community Driven with staking and rewards</li>
+                  <li>Sufficient Liquidity for smooth transactions</li>
+                  <li>Strong Growth Potential with development funds</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -140,5 +168,4 @@ const Tokenomics: React.FC = () => {
     </div>
   );
 };
-
 export default Tokenomics;
