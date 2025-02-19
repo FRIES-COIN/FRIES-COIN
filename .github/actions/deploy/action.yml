@@ -1,0 +1,34 @@
+name: Deploy
+description: Deploy canister to the Internet Computer
+
+inputs:
+  identity:
+    description: Identity to use for dfx
+    required: true
+  canister_name:
+    description: Canister name to deploy
+    required: true
+  network:
+    description: Network to deploy to
+    required: true
+  wasm_file:
+    description: Path to the wasm file to deploy
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Install dfx
+      uses: dfinity/setup-dfx@main
+
+    - name: Authenticate dfx
+      shell: bash
+      run: |
+        echo ${{ inputs.identity }} | base64 --decode > deploy_identity.pem
+        dfx identity import --storage-mode=plaintext deploy_identity deploy_identity.pem
+        dfx identity use deploy_identity
+
+    - name: Deploy
+      shell: bash
+      run: |
+        dfx canister install ${{ inputs.canister_name }} --network ${{ inputs.network }} --wasm ${{ inputs.wasm_file }} --mode upgrade

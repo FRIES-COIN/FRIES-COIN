@@ -1,0 +1,80 @@
+name: Build
+description: Build the Rust canister
+
+inputs:
+  lint:
+    description: Run lint with clippy and rustfmt
+    required: true
+  test:
+    description: Run tests with cargo test
+    required: true
+  gzip:
+    description: Gzip the wasm file
+    required: true
+  version:
+    description: Version of the output gzip wasm file
+    required: false
+    default: ${{ github.sha }}
+  package:
+    description: Rust package name to build
+    required: false
+  build_args:
+    description: Arguments to pass to cargo build
+    required: false
+    default: ""
+
+runs:
+  using: composite
+  steps:
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        toolchain: stable
+        targets: wasm32-unknown-unknown
+        components: rustfmt, clippy
+
+    - name: Setup Cache
+      uses: Swatinem/rust-cache@v2
+
+    - name: rustfmt
+      shell: bash
+      if: inputs.lint == 'true'
+      env:
+        CARGO_TERM_COLOR: always
+        RUSTFLAGS: "-D warnings"
+      run: |
+        cargo fmt -- --check
+
+    - name: clippy
+      shell: bash
+      if: inputs.lint == 'true'
+      env:
+        CARGO_TERM_COLOR: always
+        RUSTFLAGS: "-D warnings"
+      run: cargo clippy
+
+    - name: Build
+      shell: bash
+      env:
+        CARGO_TERM_COLOR: always
+        RUSTFLAGS: "-D warnings"
+        CARGO_BUILD_TARGET: wasm32-unknown-unknown
+      run: cargo build --release -p "${{ inputs.package }}" ${{ inputs.build_args }}
+
+    - name: Gzip Wasm
+      shell: bash
+      if: inputs.gzip == 'true'
+      run: |
+        gzip -c target/wasm32-unknown-unknown/release/${{ inputs.package }}.wasm > wasm/${{ inputs.package }}_${{ inputs.version }}.wasm.gz
+        cp target/wasm32-unknown-unknown/release/${{ inputs.package }}.wasm wasm/${{ inputs.package }}_${{ inputs.version }}.wasm
+
+        gzip -c target/wasm32-unknown-unknown/release/${{ inputs.package }}.wasm > wasm/${{ inputs.package }}.wasm.gz
+        cp target/wasm32-unknown-unknown/release/${{ inputs.package }}.wasm wasm/${{ inputs.package }}.wasm
+
+    - name: Tests
+      shell: bash
+      if: inputs.test == 'true'
+      env:
+        CARGO_TERM_COLOR: always
+        RUSTFLAGS: "-D warnings"
+      run: cargo test

@@ -1,0 +1,74 @@
+name: Build and Deploy canister
+
+on:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  VERSION: ${{ github.sha }}
+  PACKAGE: "user_registry"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Rust
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true
+
+      - name: Install PocketIC server
+        uses: dfinity/pocketic@main
+      - name: Confirm successful installation
+        run: $POCKET_IC_BIN --version
+
+      - name: Build
+        uses: ./.github/actions/build
+        with:
+          lint: "true"
+          test: "true"
+          gzip: "true"
+          version: ${{ env.VERSION }}
+          package: ${{ env.PACKAGE }}
+          build_args: ""
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ env.PACKAGE }}_${{ github.sha }}
+          path: wasm/${{ env.PACKAGE }}_${{ env.VERSION }}.wasm.gz
+          if-no-files-found: error
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare Wasm Directory
+        run: mkdir -p wasm
+
+      - name: Download Artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ env.PACKAGE }}_${{ github.sha }}
+          path: wasm
+
+      - name: Deploy
+        uses: ./.github/actions/deploy
+        with:
+          identity: ${{ secrets.IC_IDENTITY }}
+          canister_name: ${{ env.PACKAGE }}
+          network: ic
+          wasm_file: wasm/${{ env.PACKAGE }}_${{ github.sha }}.wasm.gz
