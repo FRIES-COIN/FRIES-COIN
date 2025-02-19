@@ -11,7 +11,7 @@ concurrency:
 
 env:
   VERSION: ${{ github.sha }}
-  PACKAGE: "user_registry"
+  PACKAGE: "FRIES-COIN-frontend"
 
 jobs:
   build:
